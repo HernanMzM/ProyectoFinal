@@ -1,3 +1,14 @@
+//Equipo 9
+//Alejandro_ Texto e ingresar datos, diseño, y julio le ayudó
+//Hernan: Repetir el programa para ingresar mas calificaciones
+//Efrain: funcion de nota mayor, determinar si el numero es mayor a 10 no es valido
+//diego: Solucion de invocar funciones y llego tarde
+//Julio hizo lo de los porcentajes
+//Daniel corregir al momento de que se repetia el programa, marcaba otra cosa que no era
+
+
+
+
 #include <iostream>
 using namespace std;
 
@@ -35,6 +46,7 @@ int main() {
 
             cout << "Ingrese la nota del examen del primer parcial: ";
             cin >> examen_1;
+            
             if (examen_1 > 10 || examen_1 < 0) {
                 cout << "No se admiten numeros mayores a 10 ni menores a 0. Intente de nuevo." << endl;
                 notasValidas = false;
@@ -63,7 +75,7 @@ int main() {
         cout << "El promedio es: " << promedioFinal << endl;
 
         float notaMayor = encontrarMayor(examen_1, examen_2, examen_3);
-        cout << "La calificacion mayor es: " << notaMayor << "% " << endl;
+        cout << "La calificacion mayor es: " << notaMayor << endl;
 
         do {
             cout << "¿Desea calcular el promedio de otro alumno? "<<endl;
@@ -72,8 +84,8 @@ int main() {
         } while (resp != 'n' && resp != 's'); 
 
     } while (resp == 'n'); 
-//salvador carreo el equipo
     cout << "Fin del programa." << endl;
     return 0;
 }
+
 
