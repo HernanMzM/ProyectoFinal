@@ -1,8 +1,8 @@
 //Equipo 9
-//Alejandro_ Texto e ingresar datos, diseño, y julio le ayudó
+//Alejandro_ Texto e ingresar datos, diseño, correcion de errores  y julio le ayudó
 //Hernan: Repetir el programa para ingresar mas calificaciones
 //Efrain: funcion de nota mayor, determinar si el numero es mayor a 10 no es valido
-//diego: Solucion de invocar funciones y llego tarde
+//diego: Solucion de invocar funciones y llego tarde (una hora)
 //Julio hizo lo de los porcentajes
 //Daniel corregir al momento de que se repetia el programa, marcaba otra cosa que no era
 
@@ -85,6 +85,9 @@ int main() {
 
     } while (resp == 'n'); 
     cout << "Fin del programa." << endl;
+    return 0;
+}
+
     return 0;
 }
 
