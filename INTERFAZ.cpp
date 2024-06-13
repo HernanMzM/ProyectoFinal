@@ -2,7 +2,6 @@
 #define bt1 101
 #define bt2 102
 #define bt3 103
-
 LRESULT CALLBACK WindowProcedure(HWND, UINT, WPARAM, LPARAM);
 
 char NombreClase[] = "Estilos";
@@ -82,10 +81,9 @@ LRESULT CALLBACK WindowProcedure(HWND otro, UINT mensajecomunica, WPARAM wParam,
             break;
         case WM_CREATE:
             button1 = CreateWindowEx(0, "button", "Siguiente", WS_VISIBLE | WS_CHILD, 500, 400, 100, 30, ventana1, (HMENU)bt1, 0, 0);
-            button2 = CreateWindowEx(0, "button", "Salir", WS_VISIBLE | WS_CHILD, 10, 60, 80, 40, ventana1, (HMENU)bt2, 0, 0);
-            button3 = CreateWindowEx(0, "button", "Accion", WS_VISIBLE | WS_CHILD | WS_DISABLED, 90, 10, 80, 40, ventana1, (HMENU)bt1, 0, 0);
+            button2 = CreateWindowEx(0, "button", "Salir", WS_VISIBLE | WS_CHILD, 800, 10, 80, 40, ventana1, (HMENU)bt2, 0, 0);
+            button3 = CreateWindowEx(0, "button", "Anterior", WS_VISIBLE | WS_CHILD , 10, 10, 80, 40, ventana2, (HMENU)bt3, 0, 0);
             
-            // Creando el letrero
             staticText = CreateWindowEx(
                 0, "STATIC", "SIVA",
                 WS_VISIBLE | WS_CHILD | SS_CENTER,
@@ -101,6 +99,9 @@ LRESULT CALLBACK WindowProcedure(HWND otro, UINT mensajecomunica, WPARAM wParam,
                 ShowWindow(ventana1, SW_HIDE);
             }
             break;
+            if(wParam==bt3){
+                ShowWindow(ventana1, SW_SHOW);
+            }
         default:
             return DefWindowProc(otro, mensajecomunica, wParam, lParam);
     }
