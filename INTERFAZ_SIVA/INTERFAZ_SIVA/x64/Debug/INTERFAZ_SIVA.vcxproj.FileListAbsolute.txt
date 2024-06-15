@@ -1,0 +1,10 @@
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\INTERFAZ_SIVA\INTERFAZ_SIVA\x64\Debug\INTERFAZ_SIVA.vcxproj.AssemblyReference.cache
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\INTERFAZ_SIVA\INTERFAZ_SIVA\x64\Debug\INTERFAZ_SIVA.Form1.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\INTERFAZ_SIVA\INTERFAZ_SIVA\x64\Debug\INTERFAZ_SIVA.vcxproj.GenerateResource.cache
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\INTERFAZ_SIVA\INTERFAZ_SIVA\x64\Debug\INTERFAZ_SIVA.exe
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\INTERFAZ_SIVA\INTERFAZ_SIVA\x64\Debug\INTERFAZ_SIVA.Marcas_disponibles.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\INTERFAZ_SIVA\INTERFAZ_SIVA\x64\Debug\INTERFAZ_SIVA.Devoluciones.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\INTERFAZ_SIVA\INTERFAZ_SIVA\x64\Debug\INTERFAZ_SIVA.Genero.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\INTERFAZ_SIVA\INTERFAZ_SIVA\x64\Debug\INTERFAZ_SIVA.Inventarios.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\INTERFAZ_SIVA\INTERFAZ_SIVA\x64\Debug\INTERFAZ_SIVA.Marca.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\INTERFAZ_SIVA\INTERFAZ_SIVA\x64\Debug\INTERFAZ_SIVA.Ventas.resources
