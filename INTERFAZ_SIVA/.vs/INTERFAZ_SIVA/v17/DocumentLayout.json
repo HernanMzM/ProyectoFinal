@@ -3,24 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Genero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|solutionrelative:INTERFAZ_SIVA\\Genero.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+      "AbsoluteMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|solutionrelative:INTERFAZ_SIVA\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Marca.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|solutionrelative:INTERFAZ_SIVA\\Marca.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+      "AbsoluteMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Marcas_disponibles.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|solutionrelative:INTERFAZ_SIVA\\Marcas_disponibles.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Inventarios.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|solutionrelative:INTERFAZ_SIVA\\Inventarios.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
+      "AbsoluteMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
+      "RelativeMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|solutionrelative:INTERFAZ_SIVA\\Form1.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Marcas_disponibles.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
       "RelativeMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|solutionrelative:INTERFAZ_SIVA\\Marcas_disponibles.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Ventas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form",
-      "RelativeMoniker": "D:0:0:{6FFC01F6-8EB7-4021-9233-3AB5E042FF32}|INTERFAZ_SIVA\\INTERFAZ_SIVA.vcxproj|solutionrelative:INTERFAZ_SIVA\\Ventas.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,8 +26,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 4,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form1.h [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Form1.h",
+              "RelativeDocumentMoniker": "INTERFAZ_SIVA\\Form1.h",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Form1.h [Dise\u00F1o]",
+              "RelativeToolTip": "INTERFAZ_SIVA\\Form1.h [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-15T02:36:58.72Z",
+              "IsPinned": true,
+              "EditorCaption": " [Dise\u00F1o]"
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
@@ -42,18 +51,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Ventas.h [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Ventas.h",
-              "RelativeDocumentMoniker": "INTERFAZ_SIVA\\Ventas.h",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Ventas.h [Dise\u00F1o]",
-              "RelativeToolTip": "INTERFAZ_SIVA\\Ventas.h [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-15T02:02:45.358Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "Marcas_disponibles.h [Dise\u00F1o]",
               "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Marcas_disponibles.h",
@@ -61,44 +58,34 @@
               "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Marcas_disponibles.h [Dise\u00F1o]",
               "RelativeToolTip": "INTERFAZ_SIVA\\Marcas_disponibles.h [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-15T01:42:52.29Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Marca.h [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Marca.h",
-              "RelativeDocumentMoniker": "INTERFAZ_SIVA\\Marca.h",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Marca.h [Dise\u00F1o]",
-              "RelativeToolTip": "INTERFAZ_SIVA\\Marca.h [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-15T01:51:24.965Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Inventarios.h [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Inventarios.h",
-              "RelativeDocumentMoniker": "INTERFAZ_SIVA\\Inventarios.h",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Inventarios.h [Dise\u00F1o]",
-              "RelativeToolTip": "INTERFAZ_SIVA\\Inventarios.h [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-15T01:51:23.798Z",
+              "WhenOpened": "2024-06-17T15:55:57.726Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Genero.h [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Genero.h",
-              "RelativeDocumentMoniker": "INTERFAZ_SIVA\\Genero.h",
-              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Genero.h [Dise\u00F1o]",
-              "RelativeToolTip": "INTERFAZ_SIVA\\Genero.h [Dise\u00F1o]",
+              "Title": "Form1.h",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Form1.h",
+              "RelativeDocumentMoniker": "INTERFAZ_SIVA\\Form1.h",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Form1.h",
+              "RelativeToolTip": "INTERFAZ_SIVA\\Form1.h",
+              "ViewState": "AQIAAJ4AAAAAAAAAAAAAAKwAAAANAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
-              "WhenOpened": "2024-06-15T01:51:22.544Z",
-              "EditorCaption": " [Dise\u00F1o]"
+              "WhenOpened": "2024-06-17T15:10:01.239Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Marcas_disponibles.h",
+              "DocumentMoniker": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Marcas_disponibles.h",
+              "RelativeDocumentMoniker": "INTERFAZ_SIVA\\Marcas_disponibles.h",
+              "ToolTip": "C:\\Users\\Usuario\\OneDrive\\Escritorio\\ProyectoFinal\\INTERFAZ_SIVA\\INTERFAZ_SIVA\\Marcas_disponibles.h",
+              "RelativeToolTip": "INTERFAZ_SIVA\\Marcas_disponibles.h",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAALAAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
+              "WhenOpened": "2024-06-15T02:36:45.153Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -162,9 +162,20 @@ namespace CppCLRWinFormsProject {
 	private: System::Void label1_Click_1(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-		INTERFAZ_SIVA::Marcas_disponibles^ Marcas_disponibles = gcnew INTERFAZ_SIVA::Marcas_disponibles();
-		this->Visible = false;
-		Marcas_disponibles->ShowDialog();
+		string user = this->toStandardString(this->txt_user->Text);
+		string pass = this->toStandardString(this->txt_pass->Text);
+		if (pass == "skylex123") {
+			MessageBox::Show(L"Bienvenido al sistema " + this->toSystemString(user));
+			INTERFAZ_SIVA::Marcas_disponibles^ Marcas_disponibles = gcnew INTERFAZ_SIVA::Marcas_disponibles();
+			this->Visible = false;
+			Marcas_disponibles->ShowDialog();
+
+			//ingresar
+		}
+		else {
+			MessageBox::Show(L"Contraseña incorrecta");
+		}
+		
 
 	}
 	private: System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e) {

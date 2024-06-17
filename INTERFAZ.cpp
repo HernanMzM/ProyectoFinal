@@ -1,109 +1,198 @@
-#include <windows.h>
-#define bt1 101
-#define bt2 102
-#define bt3 103
-LRESULT CALLBACK WindowProcedure(HWND, UINT, WPARAM, LPARAM);
+#pragma once
+#include <string>
 
-char NombreClase[] = "Estilos";
-HWND ventana1;
-HWND ventana2;
-HWND button1;
-HWND button2;
-HWND button3;
-HWND staticText;  // Control de texto estático
-MSG mensajecomunica;
-WNDCLASSEX estilo1;
+namespace CppCLRWinFormsProject {
+    using namespace System;
+    using namespace System::ComponentModel;
+    using namespace System::Collections;
+    using namespace System::Windows::Forms;
+    using namespace System::Data;
+    using namespace System::Drawing;
+    using namespace std;
 
-int WINAPI WinMain(HINSTANCE hThisInstance, HINSTANCE hPrevInstance, LPSTR lpszArgument, int nCmdShow) {
-    estilo1.hInstance = hThisInstance;
-    estilo1.lpszClassName = NombreClase;
-    estilo1.lpfnWndProc = WindowProcedure;
-    estilo1.style = CS_DBLCLKS;
-    estilo1.cbSize = sizeof(WNDCLASSEX);
-    estilo1.hIcon = LoadIcon(NULL, IDI_QUESTION);
-    estilo1.hIconSm = LoadIcon(NULL, IDI_INFORMATION);
-    estilo1.hCursor = LoadCursor(NULL, IDC_HAND);
-    estilo1.lpszMenuName = NULL;
-    estilo1.cbClsExtra = 0;
-    estilo1.cbWndExtra = 0;
-    estilo1.hbrBackground = (HBRUSH)COLOR_WINDOW;
+    /// <summary>
+    /// Summary for Form1
+    /// </summary>
+    public ref class Form1 : public System::Windows::Forms::Form
+    {
+    public:
+        Form1(void)
+        {
+            InitializeComponent();
+            //
+            //TODO: Add the constructor code here
+            //
+        }
 
-    if (!RegisterClassEx(&estilo1))
-        return 0;
+    protected:
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        ~Form1()
+        {
+            if (components)
+            {
+                delete components;
+            }
+        }
+    private: System::Windows::Forms::Label^ lbl_SIVA;
+    protected:
 
-    ventana1 = CreateWindowEx(
-        0,
-        NombreClase,
-        ("INGRESAR AL SISTEMA SIVA"),
-        WS_OVERLAPPEDWINDOW | WS_BORDER,
-        250,
-        0,
-        888,
-        788,
-        HWND_DESKTOP,
-        NULL,
-        hThisInstance,
-        NULL
-    );
+    private: System::Windows::Forms::Button^ btn_siguiente;
+    private: System::Windows::Forms::TextBox^ txt_user;
+    private: System::Windows::Forms::TextBox^ txt_pass;
 
-    ventana2 = CreateWindowEx(
-        0,
-        NombreClase,
-        ("MARCA DE ROPA"),
-        WS_OVERLAPPEDWINDOW | WS_BORDER,
-        250,
-        50,
-        888,
-        788,
-        HWND_DESKTOP,
-        NULL,
-        hThisInstance,
-        NULL
-    );
 
-    ShowWindow(ventana1, nCmdShow);
-    while (GetMessage(&mensajecomunica, NULL, 0, 0)) {
-        TranslateMessage(&mensajecomunica);
-        DispatchMessage(&mensajecomunica);
+    private: System::Windows::Forms::Label^ lbl_user;
+    private: System::Windows::Forms::Label^ lbl_pass;
+
+    protected:
+
+    protected:
+
+    protected:
+
+
+    protected:
+
+    private:
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        System::ComponentModel::Container^ components;
+
+#pragma region Windows Form Designer generated code
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        void InitializeComponent(void)
+        {
+            this->lbl_SIVA = (gcnew System::Windows::Forms::Label());
+            this->btn_siguiente = (gcnew System::Windows::Forms::Button());
+            this->txt_user = (gcnew System::Windows::Forms::TextBox());
+            this->txt_pass = (gcnew System::Windows::Forms::TextBox());
+            this->lbl_user = (gcnew System::Windows::Forms::Label());
+            this->lbl_pass = (gcnew System::Windows::Forms::Label());
+            this->SuspendLayout();
+            // 
+            // lbl_SIVA
+            // 
+            this->lbl_SIVA->AutoSize = true;
+            this->lbl_SIVA->BackColor = System::Drawing::SystemColors::ButtonFace;
+            this->lbl_SIVA->Font = (gcnew System::Drawing::Font(L"Modern No. 20", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->lbl_SIVA->Location = System::Drawing::Point(188, 46);
+            this->lbl_SIVA->Name = L"lbl_SIVA";
+            this->lbl_SIVA->Size = System::Drawing::Size(160, 38);
+            this->lbl_SIVA->TabIndex = 0;
+            this->lbl_SIVA->Text = L"JPSHOP";
+            this->lbl_SIVA->Click += gcnew System::EventHandler(this, &Form1::label1_Click_1);
+            // 
+            // btn_siguiente
+            // 
+            this->btn_siguiente->BackColor = System::Drawing::SystemColors::ControlLight;
+            this->btn_siguiente->Cursor = System::Windows::Forms::Cursors::AppStarting;
+            this->btn_siguiente->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->btn_siguiente->Location = System::Drawing::Point(268, 241);
+            this->btn_siguiente->Name = L"btn_siguiente";
+            this->btn_siguiente->Size = System::Drawing::Size(80, 23);
+            this->btn_siguiente->TabIndex = 1;
+            this->btn_siguiente->Text = L"Siguiente";
+            this->btn_siguiente->UseVisualStyleBackColor = false;
+            this->btn_siguiente->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
+            // 
+            // txt_user
+            // 
+            this->txt_user->Location = System::Drawing::Point(180, 137);
+            this->txt_user->Name = L"txt_user";
+            this->txt_user->Size = System::Drawing::Size(168, 20);
+            this->txt_user->TabIndex = 2;
+            this->txt_user->TextChanged += gcnew System::EventHandler(this, &Form1::textBox1_TextChanged);
+            // 
+            // txt_pass
+            // 
+            this->txt_pass->Location = System::Drawing::Point(180, 194);
+            this->txt_pass->Name = L"txt_pass";
+            this->txt_pass->Size = System::Drawing::Size(168, 20);
+            this->txt_pass->TabIndex = 3;
+            // 
+            // lbl_user
+            // 
+            this->lbl_user->AutoSize = true;
+            this->lbl_user->Location = System::Drawing::Point(183, 121);
+            this->lbl_user->Name = L"lbl_user";
+            this->lbl_user->Size = System::Drawing::Size(43, 13);
+            this->lbl_user->TabIndex = 4;
+            this->lbl_user->Text = L"Usuario";
+            // 
+            // lbl_pass
+            // 
+            this->lbl_pass->AutoSize = true;
+            this->lbl_pass->Location = System::Drawing::Point(183, 178);
+            this->lbl_pass->Name = L"lbl_pass";
+            this->lbl_pass->Size = System::Drawing::Size(61, 13);
+            this->lbl_pass->TabIndex = 5;
+            this->lbl_pass->Text = L"Contraseña";
+            this->lbl_pass->Click += gcnew System::EventHandler(this, &Form1::lbl_pass_Click);
+            // 
+            // Form1
+            // 
+            this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
+            this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+            this->ClientSize = System::Drawing::Size(560, 317);
+            this->Controls->Add(this->lbl_pass);
+            this->Controls->Add(this->lbl_user);
+            this->Controls->Add(this->txt_pass);
+            this->Controls->Add(this->txt_user);
+            this->Controls->Add(this->btn_siguiente);
+            this->Controls->Add(this->lbl_SIVA);
+            this->ForeColor = System::Drawing::SystemColors::ActiveCaptionText;
+            this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
+            this->Name = L"Form1";
+            this->Text = L"Form1";
+            this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
+            this->ResumeLayout(false);
+            this->PerformLayout();
+
+        }
+#pragma endregion
+    private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
+    }
+    private: System::Void label1_Click_1(System::Object^ sender, System::EventArgs^ e) {
+    }
+    private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+        string user = this->toStandardString(this->txt_user->Text);
+        string pass = this->toStandardString(this->txt_pass->Text);
+        if (user == "Juanpi") {
+            MessageBox::Show(L"Bienvenido al sistema " +this->toSystemString(user));
+        }
+        else {
+            MessageBox::Show(L"Usuario incorrecto" );
+        }
+        
+
+    }
+    private: System::Void Form1_Load(System::Object^ sender, System::EventArgs^ e) {
+    }
+    private: System::Void textBox1_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+    }
+    private: System::Void lbl_pass_Click(System::Object^ sender, System::EventArgs^ e) {
+    }
+    private: static string toStandardString(System::String^ string) {
+        using System::Runtime::InteropServices::Marshal;
+        System::IntPtr pointer = Marshal::StringToHGlobalAnsi(string);
+        char* charPointer = reinterpret_cast<char*>(pointer.ToPointer());
+        std::string returnString(charPointer, string->Length);
+        Marshal::FreeHGlobal(pointer);
+        return returnString;
+    }
+    private: static String^ toSystemString(string str) {
+        return gcnew String (str.c_str());
     }
 
-    return mensajecomunica.wParam;
-}
 
-LRESULT CALLBACK WindowProcedure(HWND otro, UINT mensajecomunica, WPARAM wParam, LPARAM lParam) {
-    switch (mensajecomunica) {
-        case WM_CLOSE:
-            if (otro == ventana2) {
-                ShowWindow(ventana2, SW_HIDE);
-            } else if (otro == ventana1) {
-                PostQuitMessage(0);
-            }
-            break;
-        case WM_CREATE:
-            button1 = CreateWindowEx(0, "button", "Siguiente", WS_VISIBLE | WS_CHILD, 500, 400, 100, 30, ventana1, (HMENU)bt1, 0, 0);
-            button2 = CreateWindowEx(0, "button", "Salir", WS_VISIBLE | WS_CHILD, 800, 10, 80, 40, ventana1, (HMENU)bt2, 0, 0);
-            button3 = CreateWindowEx(0, "button", "Anterior", WS_VISIBLE | WS_CHILD , 10, 10, 80, 40, ventana2, (HMENU)bt3, 0, 0);
-            
-            staticText = CreateWindowEx(
-                0, "STATIC", "SIVA",
-                WS_VISIBLE | WS_CHILD | SS_CENTER,
-                100, 100, 200, 30,
-                ventana1, NULL, GetModuleHandle(NULL), NULL
-            );
-            break;
-        case WM_COMMAND:
-            if (wParam == bt2) {
-                PostQuitMessage(0);
-            } else if (wParam == bt1) {
-                ShowWindow(ventana2, SW_SHOW);
-                ShowWindow(ventana1, SW_HIDE);
-            }
-            break;
-            if(wParam==bt3){
-                ShowWindow(ventana1, SW_SHOW);
-            }
-        default:
-            return DefWindowProc(otro, mensajecomunica, wParam, lParam);
-    }
-    return 0;
+
+
+};
 }
