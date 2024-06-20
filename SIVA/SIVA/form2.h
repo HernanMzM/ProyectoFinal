@@ -1,5 +1,5 @@
 #pragma once
-
+#include "Form3.h"
 namespace SIVA {
 
 	using namespace System;
@@ -35,6 +35,9 @@ namespace SIVA {
 			}
 		}
 	private: System::Windows::Forms::Label^ label1;
+	private: System::Windows::Forms::Button^ gymshark;
+	private: System::Windows::Forms::Button^ YoungLA;
+
 	protected:
 
 	private:
@@ -51,25 +54,54 @@ namespace SIVA {
 		void InitializeComponent(void)
 		{
 			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->gymshark = (gcnew System::Windows::Forms::Button());
+			this->YoungLA = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 27.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 48, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(352, 9);
+			this->label1->Location = System::Drawing::Point(294, 1);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(171, 50);
+			this->label1->Size = System::Drawing::Size(296, 86);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"JP SHOP";
 			this->label1->Click += gcnew System::EventHandler(this, &Form2::label1_Click);
+			// 
+			// gymshark
+			// 
+			this->gymshark->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->gymshark->Location = System::Drawing::Point(315, 146);
+			this->gymshark->Name = L"gymshark";
+			this->gymshark->Size = System::Drawing::Size(259, 68);
+			this->gymshark->TabIndex = 1;
+			this->gymshark->Text = L"GymShark";
+			this->gymshark->UseVisualStyleBackColor = true;
+			this->gymshark->Click += gcnew System::EventHandler(this, &Form2::gymshark_Click);
+			// 
+			// YoungLA
+			// 
+			this->YoungLA->Font = (gcnew System::Drawing::Font(L"Microsoft YaHei UI", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->YoungLA->Location = System::Drawing::Point(315, 259);
+			this->YoungLA->Name = L"YoungLA";
+			this->YoungLA->Size = System::Drawing::Size(259, 68);
+			this->YoungLA->TabIndex = 2;
+			this->YoungLA->Text = L"YoungLA";
+			this->YoungLA->UseVisualStyleBackColor = true;
+			this->YoungLA->Click += gcnew System::EventHandler(this, &Form2::button1_Click);
 			// 
 			// Form2
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+			this->BackColor = System::Drawing::SystemColors::ActiveBorder;
 			this->ClientSize = System::Drawing::Size(884, 461);
+			this->Controls->Add(this->YoungLA);
+			this->Controls->Add(this->gymshark);
 			this->Controls->Add(this->label1);
 			this->Name = L"Form2";
 			this->Text = L"Form2";
@@ -83,5 +115,12 @@ namespace SIVA {
 	}
 	private: System::Void label1_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-	};
+	private: System::Void gymshark_Click(System::Object^ sender, System::EventArgs^ e) {
+		this->Hide();
+		SIVA::Form3^ form3 = gcnew SIVA::Form3();
+		form3->Show();
+	}
+	private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+};
 }
