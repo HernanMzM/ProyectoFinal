@@ -40,6 +40,12 @@ namespace SIVA {
 	private: System::Windows::Forms::Button^ plgh;
 	private: System::Windows::Forms::Button^ pagh;
 	private: System::Windows::Forms::Button^ shgh;
+	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Label^ label4;
+	private: System::Windows::Forms::Label^ label5;
+	private: System::Windows::Forms::Label^ label6;
+	private: System::Windows::Forms::Button^ comprar;
+	private: System::Windows::Forms::Button^ devolver;
 
 
 
@@ -64,6 +70,12 @@ namespace SIVA {
 			this->plgh = (gcnew System::Windows::Forms::Button());
 			this->pagh = (gcnew System::Windows::Forms::Button());
 			this->shgh = (gcnew System::Windows::Forms::Button());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->label4 = (gcnew System::Windows::Forms::Label());
+			this->label5 = (gcnew System::Windows::Forms::Label());
+			this->label6 = (gcnew System::Windows::Forms::Label());
+			this->comprar = (gcnew System::Windows::Forms::Button());
+			this->devolver = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -142,12 +154,95 @@ namespace SIVA {
 			this->shgh->Text = L"AGREGAR";
 			this->shgh->UseVisualStyleBackColor = false;
 			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Verdana", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->Location = System::Drawing::Point(165, 145);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(112, 46);
+			this->label3->TabIndex = 7;
+			this->label3->Text = L"Sudadera\r\n$1500";
+			this->label3->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->label3->Click += gcnew System::EventHandler(this, &Form3::label3_Click);
+			// 
+			// label4
+			// 
+			this->label4->AutoSize = true;
+			this->label4->Font = (gcnew System::Drawing::Font(L"Verdana", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label4->Location = System::Drawing::Point(324, 145);
+			this->label4->Name = L"label4";
+			this->label4->Size = System::Drawing::Size(91, 46);
+			this->label4->TabIndex = 8;
+			this->label4->Text = L"Playera\r\n$850\r\n";
+			this->label4->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->label4->Click += gcnew System::EventHandler(this, &Form3::label4_Click);
+			// 
+			// label5
+			// 
+			this->label5->AutoSize = true;
+			this->label5->Font = (gcnew System::Drawing::Font(L"Verdana", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label5->Location = System::Drawing::Point(472, 145);
+			this->label5->Name = L"label5";
+			this->label5->Size = System::Drawing::Size(80, 46);
+			this->label5->TabIndex = 9;
+			this->label5->Text = L"Pants\r\n$1500";
+			this->label5->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			this->label5->Click += gcnew System::EventHandler(this, &Form3::label5_Click);
+			// 
+			// label6
+			// 
+			this->label6->AutoSize = true;
+			this->label6->Font = (gcnew System::Drawing::Font(L"Verdana", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label6->Location = System::Drawing::Point(603, 145);
+			this->label6->Name = L"label6";
+			this->label6->Size = System::Drawing::Size(80, 46);
+			this->label6->TabIndex = 10;
+			this->label6->Text = L"Short\r\n$1500";
+			this->label6->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
+			// 
+			// comprar
+			// 
+			this->comprar->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->comprar->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->comprar->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->comprar->Location = System::Drawing::Point(207, 396);
+			this->comprar->Name = L"comprar";
+			this->comprar->Size = System::Drawing::Size(208, 47);
+			this->comprar->TabIndex = 11;
+			this->comprar->Text = L"COMPRAR";
+			this->comprar->UseVisualStyleBackColor = false;
+			// 
+			// devolver
+			// 
+			this->devolver->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->devolver->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 20.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->devolver->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->devolver->Location = System::Drawing::Point(452, 396);
+			this->devolver->Name = L"devolver";
+			this->devolver->Size = System::Drawing::Size(208, 47);
+			this->devolver->TabIndex = 12;
+			this->devolver->Text = L"DEVOLVER";
+			this->devolver->UseVisualStyleBackColor = false;
+			// 
 			// Form3
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveBorder;
 			this->ClientSize = System::Drawing::Size(884, 461);
+			this->Controls->Add(this->devolver);
+			this->Controls->Add(this->comprar);
+			this->Controls->Add(this->label6);
+			this->Controls->Add(this->label5);
+			this->Controls->Add(this->label4);
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->shgh);
 			this->Controls->Add(this->pagh);
 			this->Controls->Add(this->plgh);
@@ -169,6 +264,12 @@ namespace SIVA {
 	private: System::Void listView1_SelectedIndexChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
 private: System::Void vsugh_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
