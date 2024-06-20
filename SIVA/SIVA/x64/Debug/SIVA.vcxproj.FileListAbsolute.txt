@@ -1,0 +1,3 @@
+C:\Users\jurbi\Desktop\SIVA\SIVA\SIVA\x64\Debug\SIVA.vcxproj.AssemblyReference.cache
+C:\Users\jurbi\Desktop\SIVA\SIVA\SIVA\x64\Debug\SIVA.Form1.resources
+C:\Users\jurbi\Desktop\SIVA\SIVA\SIVA\x64\Debug\SIVA.vcxproj.GenerateResource.cache
