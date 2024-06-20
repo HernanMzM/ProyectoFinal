@@ -69,8 +69,10 @@ namespace CppCLRWinFormsProject {
             // labelsiva
             // 
             this->labelsiva->AutoSize = true;
+            this->labelsiva->BackColor = System::Drawing::SystemColors::WindowText;
             this->labelsiva->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 72, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
+            this->labelsiva->ForeColor = System::Drawing::SystemColors::Control;
             this->labelsiva->Location = System::Drawing::Point(325, 9);
             this->labelsiva->Name = L"labelsiva";
             this->labelsiva->Size = System::Drawing::Size(265, 128);
@@ -84,6 +86,7 @@ namespace CppCLRWinFormsProject {
             this->label1->AutoSize = true;
             this->label1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
+            this->label1->ForeColor = System::Drawing::SystemColors::ControlLight;
             this->label1->Location = System::Drawing::Point(342, 164);
             this->label1->Name = L"label1";
             this->label1->Size = System::Drawing::Size(157, 30);
@@ -105,6 +108,7 @@ namespace CppCLRWinFormsProject {
             this->label2->AutoSize = true;
             this->label2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 15.75F, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
+            this->label2->ForeColor = System::Drawing::SystemColors::ControlLight;
             this->label2->Location = System::Drawing::Point(342, 254);
             this->label2->Name = L"label2";
             this->label2->Size = System::Drawing::Size(192, 30);
@@ -137,6 +141,7 @@ namespace CppCLRWinFormsProject {
             // 
             this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
             this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
+            this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
             this->ClientSize = System::Drawing::Size(884, 461);
             this->Controls->Add(this->bLogin);
             this->Controls->Add(this->textBox1);
@@ -145,7 +150,7 @@ namespace CppCLRWinFormsProject {
             this->Controls->Add(this->label1);
             this->Controls->Add(this->labelsiva);
             this->Name = L"Form1";
-            this->Text = L"Form1";
+            this->Text = L"SIVA";
             this->Load += gcnew System::EventHandler(this, &Form1::Form1_Load);
             this->ResumeLayout(false);
             this->PerformLayout();
@@ -166,6 +171,7 @@ namespace CppCLRWinFormsProject {
         if (username == "jpshop") {
             if (password == "skylex123") {
                 MessageBox::Show("Bienvenido JP SHOP");
+
             }
             else {
                 MessageBox::Show("Datos incorrectos");
