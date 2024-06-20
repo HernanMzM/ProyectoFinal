@@ -1,4 +1,5 @@
 #pragma once
+#include "Form2.h"
 #include <iostream>
 namespace CppCLRWinFormsProject {
 
@@ -171,7 +172,9 @@ namespace CppCLRWinFormsProject {
         if (username == "jpshop") {
             if (password == "skylex123") {
                 MessageBox::Show("Bienvenido JP SHOP");
-
+                this->Hide();
+                SIVA::Form2^ form2 = gcnew SIVA::Form2();
+                form2->Show();
             }
             else {
                 MessageBox::Show("Datos incorrectos");
