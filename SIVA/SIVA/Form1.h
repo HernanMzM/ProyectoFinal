@@ -179,7 +179,7 @@ namespace CppCLRWinFormsProject {
             else {
                 MessageBox::Show("Datos incorrectos");
             }
-        }
+        }+
         else {
             MessageBox::Show("Datos incorrectos");
         }

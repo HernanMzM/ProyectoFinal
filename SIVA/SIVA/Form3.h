@@ -72,6 +72,7 @@ namespace SIVA {
 
 
 
+
 	protected:
 
 	private:
@@ -202,6 +203,8 @@ private: System::Void label3_Click(System::Object^ sender, System::EventArgs^ e)
 private: System::Void label4_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 private: System::Void label5_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 };
 }
