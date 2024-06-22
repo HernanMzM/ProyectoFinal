@@ -2,20 +2,4 @@
   Form2.cpp
   Generando código...
   AssemblyInfo.obj : se encontró un módulo MSIL; vinculación incremental deshabilitada para MSIL; ejecutando vínculo completo
-Form2.obj : error LNK2005: ya se definió "int SIVA::sugh" (?sugh@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::plgh" (?plgh@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::pagh" (?pagh@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::shgh" (?shgh@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::sugm" (?sugm@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::plgm" (?plgm@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::pagm" (?pagm@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::shgm" (?shgm@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::suyh" (?suyh@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::plyh" (?plyh@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::payh" (?payh@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::shyh" (?shyh@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::suym" (?suym@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::plym" (?plym@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::paym" (?paym@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-Form2.obj : error LNK2005: ya se definió "int SIVA::shym" (?shym@SIVA@@3HA) en CppCLR_WinFormsProject.obj
-C:\Users\jurbi\Desktop\SIVA\SIVA\x64\Debug\SIVA.exe : fatal error LNK1169: se encontraron uno o más símbolos definidos simultáneamente
+  SIVA.vcxproj -> C:\Users\jurbi\Desktop\SIVA\SIVA\x64\Debug\SIVA.exe

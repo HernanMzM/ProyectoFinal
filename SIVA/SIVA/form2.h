@@ -7,23 +7,6 @@ namespace SIVA {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
-	int sugh = 20;
-	int plgh = 30;
-	int pagh = 20;
-	int shgh = 15;
-	int sugm = 10;
-	int plgm = 30;
-	int pagm = 20;
-	int shgm = 15;
-
-	int suyh = 10;
-	int plyh = 30;
-	int payh = 20;
-	int shyh = 15;
-	int suym = 10;
-	int plym = 30;
-	int paym = 20;
-	int shym = 15;
 
 	/// <summary>
 	/// Resumen de Form2
@@ -151,67 +134,176 @@ namespace SIVA {
 	}
 	private: System::Void cp_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
-	private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ e) {
+	private:
+		int sugh = 20;
+		int plgh = 30;
+		int pagh = 20;
+		int shgh = 15;
+		int sugm = 10;
+		int plgm = 30;
+		int pagm = 20;
+		int shgm = 15;
+
+		int suyh = 10;
+		int plyh = 30;
+		int payh = 20;
+		int shyh = 15;
+		int suym = 10;
+		int plym = 30;
+		int paym = 20;
+		int shym = 15;
+
+private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ e) {
 	String^ claveStr = cp->Text;
 	int clave = System::Convert::ToInt32(claveStr);
 
 	switch (clave) {
-	case 111: //sudadera gym shark hombre
-		sugh--;
+	case 111: // sudadera gym shark hombre
 		if (sugh > 0) {
+			sugh--;
 			MessageBox::Show("Sudadera GymShark Hombre añadida");
-		} else if (sugh <=0){
-			MessageBox::Show("Articulo sin existencia");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
 		}
 		break;
 	case 211: // playera gymshark hombre
-		plgh--;
+		if (plgh > 0) {
+			plgh--;
+			MessageBox::Show("Playera GymShark Hombre añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
 	case 311: // pants gymshark hombre
-		pagh--;
+		if (pagh > 0) {
+			pagh--;
+			MessageBox::Show("Pants GymShark Hombre añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
 	case 411: // short gymshark hombre
-		shgh--;
+		if (shgh > 0) {
+			shgh--;
+			MessageBox::Show("Short GymShark Hombre añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
-	case 112: //sudadera gym shark mujer
-		sugm--;
+	case 112: // sudadera gym shark mujer
+		if (sugm > 0) {
+			sugm--;
+			MessageBox::Show("Sudadera GymShark Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
 	case 212: // playera gymshark mujer
-		plgm--;
+		if (plgm > 0) {
+			plgm--;
+			MessageBox::Show("Playera GymShark Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
 	case 312: // pants gymshark mujer
-		pagm--;
+		if (pagm > 0) {
+			pagm--;
+			MessageBox::Show("Pants GymShark Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
 	case 412: // short gymshark mujer
-		shgm--;
+		if (shgm > 0) {
+			shgm--;
+			MessageBox::Show("Short GymShark Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
-	case 121: //sudadera youngla hombre
-		suyh--;
+	case 121: // sudadera youngla hombre
+		if (suyh > 0) {
+			suyh--;
+			MessageBox::Show("Sudadera Youngla Hombre añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
 	case 221: // playera youngla hombre
-		plyh--;
+		if (plyh > 0) {
+			plyh--;
+			MessageBox::Show("Playera Youngla Hombre añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
 	case 321: // pants youngla hombre
-		payh--;
+		if (payh > 0) {
+			payh--;
+			MessageBox::Show("Pants Youngla Hombre añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
 	case 421: // short youngla hombre
-		shyh--;
+		if (shyh > 0) {
+			shyh--;
+			MessageBox::Show("Short Youngla Hombre añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
-	case 122: //sudadera youngla mujer
-		suym--;
+	case 122: // sudadera youngla mujer
+		if (suym > 0) {
+			suym--;
+			MessageBox::Show("Sudadera Youngla Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
 	case 222: // playera youngla mujer
-		plym--;
+		if (plym > 0) {
+			plym--;
+			MessageBox::Show("Playera Youngla Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
 	case 322: // pants youngla mujer
-		paym--;
+		if (paym > 0) {
+			paym--;
+			MessageBox::Show("Pants Youngla Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
 	case 422: // short youngla mujer
-		shym--;
+		if (shym > 0) {
+			shym--;
+			MessageBox::Show("Short Youngla Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Artículo sin existencia");
+		}
 		break;
-
-
 	default:
+		MessageBox::Show("Clave incorrecta");
 		break;
 	}
 }
