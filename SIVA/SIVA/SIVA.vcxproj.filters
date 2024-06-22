@@ -35,9 +35,6 @@
     <ClInclude Include="Form3.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Formulariodeprueba.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -56,9 +53,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Form3.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Formulariodeprueba.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

@@ -139,9 +139,6 @@
     <ClInclude Include="Form3.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Formulariodeprueba.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
@@ -151,7 +148,6 @@
     <ClCompile Include="Form1.cpp" />
     <ClCompile Include="Form2.cpp" />
     <ClCompile Include="Form3.cpp" />
-    <ClCompile Include="Formulariodeprueba.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
@@ -178,9 +174,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formulariodeprueba.resx">
-      <DependentUpon>Formulariodeprueba.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

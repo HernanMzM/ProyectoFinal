@@ -103,6 +103,7 @@ namespace CppCLRWinFormsProject {
             this->user->Name = L"user";
             this->user->Size = System::Drawing::Size(243, 25);
             this->user->TabIndex = 2;
+            this->user->TextChanged += gcnew System::EventHandler(this, &Form1::user_TextChanged);
             // 
             // label2
             // 
@@ -179,10 +180,12 @@ namespace CppCLRWinFormsProject {
             else {
                 MessageBox::Show("Datos incorrectos");
             }
-        }+
+        }
         else {
             MessageBox::Show("Datos incorrectos");
         }
     }
-    };
+    private: System::Void user_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+    }
+};
 }
