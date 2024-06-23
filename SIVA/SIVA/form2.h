@@ -37,6 +37,8 @@ namespace SIVA {
 	private: System::Windows::Forms::Label^ label2;
 	private: System::Windows::Forms::TextBox^ cp;
 	private: System::Windows::Forms::Button^ ingresar;
+	private: System::Windows::Forms::Button^ devolver;
+
 
 
 
@@ -55,11 +57,11 @@ namespace SIVA {
 		/// </summary>
 		void InitializeComponent(void)
 		{
-
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->cp = (gcnew System::Windows::Forms::TextBox());
 			this->ingresar = (gcnew System::Windows::Forms::Button());
+			this->devolver = (gcnew System::Windows::Forms::Button());
 			this->SuspendLayout();
 			// 
 			// label1
@@ -79,7 +81,7 @@ namespace SIVA {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(341, 95);
+			this->label2->Location = System::Drawing::Point(25, 96);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(198, 30);
 			this->label2->TabIndex = 1;
@@ -90,9 +92,9 @@ namespace SIVA {
 			// 
 			this->cp->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->cp->Location = System::Drawing::Point(387, 141);
+			this->cp->Location = System::Drawing::Point(30, 141);
 			this->cp->Name = L"cp";
-			this->cp->Size = System::Drawing::Size(100, 27);
+			this->cp->Size = System::Drawing::Size(193, 27);
 			this->cp->TabIndex = 2;
 			this->cp->TextChanged += gcnew System::EventHandler(this, &Form2::cp_TextChanged);
 			// 
@@ -102,13 +104,27 @@ namespace SIVA {
 			this->ingresar->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->ingresar->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->ingresar->Location = System::Drawing::Point(340, 192);
+			this->ingresar->Location = System::Drawing::Point(30, 188);
 			this->ingresar->Name = L"ingresar";
 			this->ingresar->Size = System::Drawing::Size(193, 46);
 			this->ingresar->TabIndex = 3;
-			this->ingresar->Text = L"INGRESAR";
+			this->ingresar->Text = L"AÑADIR";
 			this->ingresar->UseVisualStyleBackColor = false;
 			this->ingresar->Click += gcnew System::EventHandler(this, &Form2::ingresar_Click);
+			// 
+			// devolver
+			// 
+			this->devolver->BackColor = System::Drawing::SystemColors::MenuText;
+			this->devolver->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->devolver->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->devolver->Location = System::Drawing::Point(30, 240);
+			this->devolver->Name = L"devolver";
+			this->devolver->Size = System::Drawing::Size(193, 46);
+			this->devolver->TabIndex = 4;
+			this->devolver->Text = L"DEVOLVER";
+			this->devolver->UseVisualStyleBackColor = false;
+			this->devolver->Click += gcnew System::EventHandler(this, &Form2::devolver_Click);
 			// 
 			// Form2
 			// 
@@ -116,6 +132,7 @@ namespace SIVA {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ControlLightLight;
 			this->ClientSize = System::Drawing::Size(884, 461);
+			this->Controls->Add(this->devolver);
 			this->Controls->Add(this->ingresar);
 			this->Controls->Add(this->cp);
 			this->Controls->Add(this->label2);
@@ -136,22 +153,22 @@ namespace SIVA {
 	}
 	private:
 		int sugh = 20; // sudadera gym shark hombre
-		int plgh = 30; // playera gymshark hombre
+		int plgh = 20; // playera gymshark hombre
 		int pagh = 20; // pants gymshark hombre
-		int shgh = 15; // short gymshark hombre
-		int sugm = 10; // sudadera gym shark mujer
-		int plgm = 30; // playera gymshark mujer
+		int shgh = 20; // short gymshark hombre
+		int sugm = 20; // sudadera gym shark mujer
+		int plgm = 20; // playera gymshark mujer
 		int pagm = 20; // pants gymshark mujer
-		int shgm = 15; // short gymshark mujer
+		int shgm = 20; // short gymshark mujer
 
 		int suyh = 10; // sudadera youngla hombre
-		int plyh = 30; // playera youngla hombre
-		int payh = 20; // pants youngla hombre
-		int shyh = 15; // short youngla hombre
+		int plyh = 10; // playera youngla hombre
+		int payh = 10; // pants youngla hombre
+		int shyh = 10; // short youngla hombre
 		int suym = 10; // sudadera youngla mujer
-		int plym = 30; // playera youngla mujer
-		int paym = 20; // pants youngla mujer
-		int shym = 15; // short youngla mujer
+		int plym = 10; // playera youngla mujer
+		int paym = 10; // pants youngla mujer
+		int shym = 10; // short youngla mujer
 
 private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ e) {
 	String^ claveStr = cp->Text;
@@ -310,6 +327,161 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 
 
 private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
+
+}
+private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ e) {
+	String^ claveStr = cp->Text;
+	int clave = System::Convert::ToInt32(claveStr);
+
+	switch (clave) {
+	case 111: // sudadera gym shark hombre
+		if (sugh < 20) {
+			sugh++;
+			MessageBox::Show("Sudadera GymShark Hombre devuelta");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 211: // playera gymshark hombre
+		if (plgh < 20) {
+			plgh++;
+			MessageBox::Show("Playera GymShark Hombre devuelta");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 311: // pants gymshark hombre
+		if (pagh < 20) {
+			pagh++;
+			MessageBox::Show("Pants GymShark Hombre devuelta");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 411: // short gymshark hombre
+		if (shgh < 20) {
+			shgh++;
+			MessageBox::Show("Short GymShark Hombre devuelta");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 112: // sudadera gym shark mujer
+		if (sugm < 20) {
+			sugm++;
+			MessageBox::Show("Sudadera GymShark Mujer devuelta");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 212: // playera gymshark mujer
+		if (plgm < 20) {
+			plgm++;
+			MessageBox::Show("Playera GymShark Mujer devuelta");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 312: // pants gymshark mujer
+		if (pagm < 20) {
+			pagm++;
+			MessageBox::Show("Pants GymShark Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 412: // short gymshark mujer
+		if (shgm < 20) {
+			shgm++;
+			MessageBox::Show("Short GymShark Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 121: // sudadera youngla hombre
+		if (suyh < 10) {
+			suyh++;
+			MessageBox::Show("Sudadera Youngla Hombre añadida");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 221: // playera youngla hombre
+		if (plyh < 10) {
+			plyh++;
+			MessageBox::Show("Playera Youngla Hombre añadida");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 321: // pants youngla hombre
+		if (payh < 10) {
+			payh++;
+			MessageBox::Show("Pants Youngla Hombre añadida");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 421: // short youngla hombre
+		if (shyh < 10) {
+			shyh++;
+			MessageBox::Show("Short Youngla Hombre añadida");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 122: // sudadera youngla mujer
+		if (suym < 10) {
+			suym++;
+			MessageBox::Show("Sudadera Youngla Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 222: // playera youngla mujer
+		if (plym < 10) {
+			plym++;
+			MessageBox::Show("Playera Youngla Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 322: // pants youngla mujer
+		if (paym < 10) {
+			paym++;
+			MessageBox::Show("Pants Youngla Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	case 422: // short youngla mujer
+		if (shym < 10) {
+			shym++;
+			MessageBox::Show("Short Youngla Mujer añadida");
+		}
+		else {
+			MessageBox::Show("Error. Inventario superado");
+		}
+		break;
+	default:
+		MessageBox::Show("Clave incorrecta");
+		break;
+	}
 }
 };
 }
