@@ -38,6 +38,9 @@ namespace SIVA {
 	private: System::Windows::Forms::TextBox^ cp;
 	private: System::Windows::Forms::Button^ ingresar;
 	private: System::Windows::Forms::Button^ devolver;
+	private: System::Windows::Forms::Label^ label3;
+	private: System::Windows::Forms::Panel^ panel1;
+
 
 
 
@@ -62,16 +65,21 @@ namespace SIVA {
 			this->cp = (gcnew System::Windows::Forms::TextBox());
 			this->ingresar = (gcnew System::Windows::Forms::Button());
 			this->devolver = (gcnew System::Windows::Forms::Button());
+			this->label3 = (gcnew System::Windows::Forms::Label());
+			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// label1
 			// 
 			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 48, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->label1->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->label1->Font = (gcnew System::Drawing::Font(L"Palatino Linotype", 48, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label1->Location = System::Drawing::Point(294, 1);
+			this->label1->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->label1->Location = System::Drawing::Point(2, -4);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(296, 86);
+			this->label1->Size = System::Drawing::Size(301, 87);
 			this->label1->TabIndex = 0;
 			this->label1->Text = L"JP SHOP";
 			this->label1->Click += gcnew System::EventHandler(this, &Form2::label1_Click);
@@ -81,7 +89,8 @@ namespace SIVA {
 			this->label2->AutoSize = true;
 			this->label2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->label2->Location = System::Drawing::Point(25, 96);
+			this->label2->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->label2->Location = System::Drawing::Point(3, 0);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(198, 30);
 			this->label2->TabIndex = 1;
@@ -92,9 +101,9 @@ namespace SIVA {
 			// 
 			this->cp->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->cp->Location = System::Drawing::Point(30, 141);
+			this->cp->Location = System::Drawing::Point(4, 33);
 			this->cp->Name = L"cp";
-			this->cp->Size = System::Drawing::Size(193, 27);
+			this->cp->Size = System::Drawing::Size(215, 27);
 			this->cp->TabIndex = 2;
 			this->cp->TextChanged += gcnew System::EventHandler(this, &Form2::cp_TextChanged);
 			// 
@@ -104,9 +113,9 @@ namespace SIVA {
 			this->ingresar->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->ingresar->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->ingresar->Location = System::Drawing::Point(30, 188);
+			this->ingresar->Location = System::Drawing::Point(4, 66);
 			this->ingresar->Name = L"ingresar";
-			this->ingresar->Size = System::Drawing::Size(193, 46);
+			this->ingresar->Size = System::Drawing::Size(215, 46);
 			this->ingresar->TabIndex = 3;
 			this->ingresar->Text = L"AÑADIR";
 			this->ingresar->UseVisualStyleBackColor = false;
@@ -118,28 +127,52 @@ namespace SIVA {
 			this->devolver->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 18, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->devolver->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->devolver->Location = System::Drawing::Point(30, 240);
+			this->devolver->Location = System::Drawing::Point(3, 118);
 			this->devolver->Name = L"devolver";
-			this->devolver->Size = System::Drawing::Size(193, 46);
+			this->devolver->Size = System::Drawing::Size(216, 46);
 			this->devolver->TabIndex = 4;
 			this->devolver->Text = L"DEVOLVER";
 			this->devolver->UseVisualStyleBackColor = false;
 			this->devolver->Click += gcnew System::EventHandler(this, &Form2::devolver_Click);
 			// 
+			// label3
+			// 
+			this->label3->AutoSize = true;
+			this->label3->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->label3->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->label3->Location = System::Drawing::Point(12, 422);
+			this->label3->Name = L"label3";
+			this->label3->Size = System::Drawing::Size(76, 30);
+			this->label3->TabIndex = 5;
+			this->label3->Text = L"SIVA™";
+			// 
+			// panel1
+			// 
+			this->panel1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel1->Controls->Add(this->label2);
+			this->panel1->Controls->Add(this->cp);
+			this->panel1->Controls->Add(this->devolver);
+			this->panel1->Controls->Add(this->ingresar);
+			this->panel1->Location = System::Drawing::Point(12, 96);
+			this->panel1->Name = L"panel1";
+			this->panel1->Size = System::Drawing::Size(224, 176);
+			this->panel1->TabIndex = 6;
+			// 
 			// Form2
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->BackColor = System::Drawing::SystemColors::ControlLightLight;
+			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->ClientSize = System::Drawing::Size(884, 461);
-			this->Controls->Add(this->devolver);
-			this->Controls->Add(this->ingresar);
-			this->Controls->Add(this->cp);
-			this->Controls->Add(this->label2);
+			this->Controls->Add(this->panel1);
+			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label1);
 			this->Name = L"Form2";
 			this->Text = L"Form2";
 			this->Load += gcnew System::EventHandler(this, &Form2::Form2_Load);
+			this->panel1->ResumeLayout(false);
+			this->panel1->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -483,5 +516,6 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 		break;
 	}
 }
+
 };
 }
