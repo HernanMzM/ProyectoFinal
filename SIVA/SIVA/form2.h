@@ -135,23 +135,23 @@ namespace SIVA {
 	private: System::Void cp_TextChanged(System::Object^ sender, System::EventArgs^ e) {
 	}
 	private:
-		int sugh = 20;
-		int plgh = 30;
-		int pagh = 20;
-		int shgh = 15;
-		int sugm = 10;
-		int plgm = 30;
-		int pagm = 20;
-		int shgm = 15;
+		int sugh = 20; // sudadera gym shark hombre
+		int plgh = 30; // playera gymshark hombre
+		int pagh = 20; // pants gymshark hombre
+		int shgh = 15; // short gymshark hombre
+		int sugm = 10; // sudadera gym shark mujer
+		int plgm = 30; // playera gymshark mujer
+		int pagm = 20; // pants gymshark mujer
+		int shgm = 15; // short gymshark mujer
 
-		int suyh = 10;
-		int plyh = 30;
-		int payh = 20;
-		int shyh = 15;
-		int suym = 10;
-		int plym = 30;
-		int paym = 20;
-		int shym = 15;
+		int suyh = 10; // sudadera youngla hombre
+		int plyh = 30; // playera youngla hombre
+		int payh = 20; // pants youngla hombre
+		int shyh = 15; // short youngla hombre
+		int suym = 10; // sudadera youngla mujer
+		int plym = 30; // playera youngla mujer
+		int paym = 20; // pants youngla mujer
+		int shym = 15; // short youngla mujer
 
 private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ e) {
 	String^ claveStr = cp->Text;
