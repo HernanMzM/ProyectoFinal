@@ -1,6 +1,7 @@
   SIVA.Form1.resources - Embedded, ContainedInManifestFile, 
   SIVA.Form2.resources - Embedded, ContainedInManifestFile, 
   SIVA.Form3.resources - Embedded, ContainedInManifestFile, 
+  SIVA.Formulariodeprueba.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly SIVA, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
 	hash=SHA1, flags=PublicKey
@@ -23,5 +24,8 @@ Class SIVA.Form2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
 Class CppCLRWinFormsProject.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+  :System.Windows.Forms.Form
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+Class SIVA.Formulariodeprueba: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

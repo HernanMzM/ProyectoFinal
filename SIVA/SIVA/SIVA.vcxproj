@@ -139,9 +139,6 @@
     <ClInclude Include="Form3.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Formulariodeprueba.h">
-      <FileType>CppForm</FileType>
-    </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
   </ItemGroup>
@@ -178,9 +175,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form3.resx">
       <DependentUpon>Form3.h</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Formulariodeprueba.resx">
-      <DependentUpon>Formulariodeprueba.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
