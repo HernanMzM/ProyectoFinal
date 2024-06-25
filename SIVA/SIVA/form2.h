@@ -40,6 +40,8 @@ namespace SIVA {
 	private: System::Windows::Forms::Button^ devolver;
 	private: System::Windows::Forms::Label^ label3;
 	private: System::Windows::Forms::Panel^ panel1;
+	private: System::Windows::Forms::Panel^ panel2;
+	private: System::Windows::Forms::Button^ button1;
 
 
 
@@ -67,6 +69,8 @@ namespace SIVA {
 			this->devolver = (gcnew System::Windows::Forms::Button());
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
+			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			this->panel1->SuspendLayout();
 			this->SuspendLayout();
 			// 
@@ -159,12 +163,37 @@ namespace SIVA {
 			this->panel1->Size = System::Drawing::Size(224, 176);
 			this->panel1->TabIndex = 6;
 			// 
+			// panel2
+			// 
+			this->panel2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel2->ForeColor = System::Drawing::SystemColors::ControlText;
+			this->panel2->Location = System::Drawing::Point(251, 96);
+			this->panel2->Name = L"panel2";
+			this->panel2->Size = System::Drawing::Size(621, 356);
+			this->panel2->TabIndex = 7;
+			// 
+			// button1
+			// 
+			this->button1->BackColor = System::Drawing::SystemColors::MenuText;
+			this->button1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button1->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->button1->Location = System::Drawing::Point(22, 375);
+			this->button1->Name = L"button1";
+			this->button1->Size = System::Drawing::Size(105, 32);
+			this->button1->TabIndex = 5;
+			this->button1->Text = L"Guía ID";
+			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &Form2::button1_Click);
+			// 
 			// Form2
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->ClientSize = System::Drawing::Size(884, 461);
+			this->Controls->Add(this->button1);
+			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
 			this->Controls->Add(this->label3);
 			this->Controls->Add(this->label1);
@@ -516,6 +545,15 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 		break;
 	}
 }
+
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+
+
+
+}
+
+
+
 
 };
 }
