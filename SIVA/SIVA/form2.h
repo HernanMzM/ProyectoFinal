@@ -1,5 +1,5 @@
 #pragma once
-#include "Form3.h"
+#include "ids.h"
 namespace SIVA {
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -57,6 +57,7 @@ namespace SIVA {
 
 
 
+
 	protected:
 
 	private:
@@ -80,9 +81,9 @@ namespace SIVA {
 			this->label3 = (gcnew System::Windows::Forms::Label());
 			this->panel1 = (gcnew System::Windows::Forms::Panel());
 			this->panel2 = (gcnew System::Windows::Forms::Panel());
+			this->labelRegistro = (gcnew System::Windows::Forms::Label());
 			this->fecha = (gcnew System::Windows::Forms::DateTimePicker());
 			this->button1 = (gcnew System::Windows::Forms::Button());
-			this->labelRegistro = (gcnew System::Windows::Forms::Label());
 			this->panel1->SuspendLayout();
 			this->panel2->SuspendLayout();
 			this->SuspendLayout();
@@ -188,6 +189,16 @@ namespace SIVA {
 			this->panel2->TabIndex = 7;
 			this->panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Form2::panel2_Paint);
 			// 
+			// labelRegistro
+			// 
+			this->labelRegistro->AutoSize = true;
+			this->labelRegistro->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->labelRegistro->Location = System::Drawing::Point(17, 26);
+			this->labelRegistro->Name = L"labelRegistro";
+			this->labelRegistro->Size = System::Drawing::Size(0, 13);
+			this->labelRegistro->TabIndex = 2;
+			this->labelRegistro->Click += gcnew System::EventHandler(this, &Form2::labelRegistro_Click);
+			// 
 			// fecha
 			// 
 			this->fecha->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
@@ -211,17 +222,6 @@ namespace SIVA {
 			this->button1->Text = L"Guía ID";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &Form2::button1_Click);
-			// 
-			// labelRegistro
-			// 
-			this->labelRegistro->AutoSize = true;
-			this->labelRegistro->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->labelRegistro->Location = System::Drawing::Point(15, 33);
-			this->labelRegistro->Name = L"labelRegistro";
-			this->labelRegistro->Size = System::Drawing::Size(35, 13);
-			this->labelRegistro->TabIndex = 2;
-			this->labelRegistro->Text = L"";
-			this->labelRegistro->Click += gcnew System::EventHandler(this, &Form2::labelRegistro_Click);
 			// 
 			// Form2
 			// 
@@ -419,7 +419,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (shyh > 0) {
 			shyh--;
 			countSuyh++;
-			registro = "Sudadera Youngla Hombre: " + countSuyh;
+			registro = "Short Youngla Hombre: " + countSuyh;
 			MessageBox::Show("Short Youngla Hombre añadida");
 		}
 		else {
@@ -640,9 +640,9 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 }
 
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-
-
-
+	this->Hide();
+	SIVA::MyForm^ myform = gcnew SIVA::MyForm();
+	myform->Show();
 }
 
 
