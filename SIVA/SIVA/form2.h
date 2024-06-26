@@ -1,5 +1,5 @@
 #pragma once
-#include "ids.h"
+#include "MyForm.h"
 namespace SIVA {
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -640,7 +640,6 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 }
 
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->Hide();
 	SIVA::MyForm^ myform = gcnew SIVA::MyForm();
 	myform->Show();
 }

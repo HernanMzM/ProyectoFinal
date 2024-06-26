@@ -93,7 +93,7 @@ namespace SIVA {
 		/// <summary>
 		/// Variable del diseñador necesaria.
 		/// </summary>
-		System::ComponentModel::Container ^components;
+		System::ComponentModel::Container^ components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
@@ -197,6 +197,7 @@ namespace SIVA {
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox2->TabIndex = 4;
 			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &MyForm::pictureBox2_Click);
 			// 
 			// label2
 			// 
@@ -236,6 +237,7 @@ namespace SIVA {
 			this->pictureBox4->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox4->TabIndex = 8;
 			this->pictureBox4->TabStop = false;
+			this->pictureBox4->Click += gcnew System::EventHandler(this, &MyForm::pictureBox4_Click);
 			// 
 			// label4
 			// 
@@ -892,9 +894,13 @@ namespace SIVA {
 
 	private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
-private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
-}
-private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
-}
-};
+	private: System::Void pictureBox1_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void pictureBox4_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
+	}
+	};
 }

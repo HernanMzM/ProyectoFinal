@@ -2,6 +2,7 @@
   SIVA.Form2.resources - Embedded, ContainedInManifestFile, 
   SIVA.Form3.resources - Embedded, ContainedInManifestFile, 
   SIVA.ids.resources - Embedded, ContainedInManifestFile, 
+  SIVA.MyForm.resources - Embedded, ContainedInManifestFile, 
 ImageRuntimeVersion: v4.0.30319
 Assembly SIVA, Version=1.0.*, Culture=Todos los idiomas (todos los países): 
 	hash=SHA1, flags=PublicKey

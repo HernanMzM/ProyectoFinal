@@ -9,3 +9,4 @@ C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\SIVA\SIVA\x64\Debug\SIVA.Form
 C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\SIVA\SIVA\x64\Debug\SIVA.Form3.resources
 C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\SIVA\SIVA\x64\Debug\SIVA.vcxproj.GenerateResource.cache
 C:\Users\jurbi\Desktop\SIVA\SIVA\SIVA\x64\Debug\SIVA.ids.resources
+C:\Users\jurbi\Desktop\SIVA\SIVA\SIVA\x64\Debug\SIVA.MyForm.resources
