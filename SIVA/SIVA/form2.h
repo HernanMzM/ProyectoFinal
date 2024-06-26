@@ -45,6 +45,9 @@ namespace SIVA {
 
 	private: System::Windows::Forms::DateTimePicker^ fecha;
 	private: System::Windows::Forms::Label^ labelRegistro;
+	private: System::Windows::Forms::Button^ button2;
+	private: System::Windows::Forms::Label^ factura;
+	private: System::Windows::Forms::Panel^ panel3;
 
 
 
@@ -84,8 +87,12 @@ namespace SIVA {
 			this->labelRegistro = (gcnew System::Windows::Forms::Label());
 			this->fecha = (gcnew System::Windows::Forms::DateTimePicker());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
+			this->factura = (gcnew System::Windows::Forms::Label());
+			this->panel3 = (gcnew System::Windows::Forms::Panel());
 			this->panel1->SuspendLayout();
 			this->panel2->SuspendLayout();
+			this->panel3->SuspendLayout();
 			this->SuspendLayout();
 			// 
 			// label1
@@ -185,7 +192,7 @@ namespace SIVA {
 			this->panel2->ForeColor = System::Drawing::SystemColors::ControlText;
 			this->panel2->Location = System::Drawing::Point(251, 96);
 			this->panel2->Name = L"panel2";
-			this->panel2->Size = System::Drawing::Size(621, 356);
+			this->panel2->Size = System::Drawing::Size(312, 356);
 			this->panel2->TabIndex = 7;
 			this->panel2->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &Form2::panel2_Paint);
 			// 
@@ -223,12 +230,47 @@ namespace SIVA {
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &Form2::button1_Click);
 			// 
+			// button2
+			// 
+			this->button2->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->button2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->button2->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->button2->Location = System::Drawing::Point(-2, 240);
+			this->button2->Name = L"button2";
+			this->button2->Size = System::Drawing::Size(303, 65);
+			this->button2->TabIndex = 3;
+			this->button2->Text = L"OK";
+			this->button2->UseVisualStyleBackColor = false;
+			this->button2->Click += gcnew System::EventHandler(this, &Form2::button2_Click);
+			// 
+			// factura
+			// 
+			this->factura->AutoSize = true;
+			this->factura->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->factura->Location = System::Drawing::Point(3, 4);
+			this->factura->Name = L"factura";
+			this->factura->Size = System::Drawing::Size(0, 13);
+			this->factura->TabIndex = 8;
+			this->factura->Click += gcnew System::EventHandler(this, &Form2::factura_Click);
+			// 
+			// panel3
+			// 
+			this->panel3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel3->Controls->Add(this->factura);
+			this->panel3->Controls->Add(this->button2);
+			this->panel3->Location = System::Drawing::Point(569, 98);
+			this->panel3->Name = L"panel3";
+			this->panel3->Size = System::Drawing::Size(303, 309);
+			this->panel3->TabIndex = 3;
+			// 
 			// Form2
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->ClientSize = System::Drawing::Size(884, 461);
+			this->Controls->Add(this->panel3);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->panel2);
 			this->Controls->Add(this->panel1);
@@ -241,6 +283,8 @@ namespace SIVA {
 			this->panel1->PerformLayout();
 			this->panel2->ResumeLayout(false);
 			this->panel2->PerformLayout();
+			this->panel3->ResumeLayout(false);
+			this->panel3->PerformLayout();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -288,6 +332,23 @@ namespace SIVA {
 		int countPaym = 0; // contador pants youngla mujer
 		int countShym = 0; // contador short youngla mujer
 
+		int sughP = 1500; // sudadera gym shark hombre
+		int plghP = 500; // playera gymshark hombre
+		int paghP = 800; // pants gymshark hombre
+		int shghP = 600; // short gymshark hombre
+		int sugmP = 1400; // sudadera gym shark mujer
+		int plgmP = 400; // playera gymshark mujer
+		int pagmP = 700; // pants gymshark mujer
+		int shgmP = 500; // short gymshark mujer
+		int suyhP = 1550; // sudadera youngla hombre
+		int plyhP = 550; // playera youngla hombre
+		int payhP = 850; // pants youngla hombre
+		int shyhP = 650; // short youngla hombre
+		int suymP = 1450; // sudadera youngla mujer
+		int plymP = 450; // playera youngla mujer
+		int paymP = 750; // pants youngla mujer
+		int shymP = 550; // short youngla mujer
+
 private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ e) {
 	String^ claveStr = cp->Text;
 	int clave = System::Convert::ToInt32(claveStr);
@@ -298,7 +359,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (sugh > 0) {
 			sugh--;
 			countSugh++;
-			registro = "Sudadera GymShark Hombre: " + countSugh;
+			registro = "Sudadera GymShark Hombre: " + sughP;
 			MessageBox::Show("Sudadera GymShark Hombre añadida");
 		}
 		else {
@@ -309,7 +370,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (plgh > 0) {
 			plgh--;
 			countPlgh++;
-			registro = "Playera GymShark Hombre: " + countPlgh;
+			registro = "Playera GymShark Hombre: " + plghP;
 			MessageBox::Show("Playera GymShark Hombre añadida");
 		}
 		else {
@@ -320,7 +381,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (pagh > 0) {
 			pagh--;
 			countPagh++;
-			registro = "Pants GymShark Hombre: " + countPagh;
+			registro = "Pants GymShark Hombre: " + paghP;
 			MessageBox::Show("Pants GymShark Hombre añadida");
 		}
 		else {
@@ -331,7 +392,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (shgh > 0) {
 			shgh--;
 			countShgh++;
-			registro = "Short GymShark Hombre: " + countShgh;
+			registro = "Short GymShark Hombre: " + shghP;
 			MessageBox::Show("Short GymShark Hombre añadida");
 		}
 		else {
@@ -342,7 +403,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (sugm > 0) {
 			sugm--;
 			countSugm++;
-			registro = "Sudadera GymShark Mujer: " + countSugm;
+			registro = "Sudadera GymShark Mujer: " + sugmP;
 			MessageBox::Show("Sudadera GymShark Mujer añadida");
 		}
 		else {
@@ -353,7 +414,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (plgm > 0) {
 			plgm--;
 			countPlgm++;
-			registro = "Playera GymShark Mujer: " + countPlgm;
+			registro = "Playera GymShark Mujer: " + plgmP;
 			MessageBox::Show("Playera GymShark Mujer añadida");
 		}
 		else {
@@ -364,7 +425,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (pagm > 0) {
 			pagm--;
 			countPagm++;
-			registro = "Pants GymShark Mujer: " + countPagm;
+			registro = "Pants GymShark Mujer: " + pagmP;
 			MessageBox::Show("Pants GymShark Mujer añadida");
 		}
 		else {
@@ -375,7 +436,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (shgm > 0) {
 			shgm--;
 			countShgm++;
-			registro = "Short GymShark Mujer: " + countShgm;
+			registro = "Short GymShark Mujer: " + shgmP;
 			MessageBox::Show("Short GymShark Mujer añadida");
 		}
 		else {
@@ -386,7 +447,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (suyh > 0) {
 			suyh--;
 			countSuyh++;
-			registro = "Sudadera Youngla Hombre: " + countSuyh;
+			registro = "Sudadera Youngla Hombre: " + suyhP;
 			MessageBox::Show("Sudadera Youngla Hombre añadida");
 		}
 		else {
@@ -397,7 +458,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (plyh > 0) {
 			plyh--;
 			countPlyh++;
-			registro = "Playera Youngla Hombre: " + countPlyh;
+			registro = "Playera Youngla Hombre: " + plyhP;
 			MessageBox::Show("Playera Youngla Hombre añadida");
 		}
 		else {
@@ -408,7 +469,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (payh > 0) {
 			payh--;
 			countPayh++;
-			registro = "Pants Youngla Hombre: " + countPayh;
+			registro = "Pants Youngla Hombre: " + payhP;
 			MessageBox::Show("Pants Youngla Hombre añadida");
 		}
 		else {
@@ -419,7 +480,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (shyh > 0) {
 			shyh--;
 			countSuyh++;
-			registro = "Short Youngla Hombre: " + countSuyh;
+			registro = "Short Youngla Hombre: " + suyhP;
 			MessageBox::Show("Short Youngla Hombre añadida");
 		}
 		else {
@@ -430,7 +491,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (suym > 0) {
 			suym--;
 			countSuym++;
-			registro = "Sudadera Youngla Mujer: " + countSuym;
+			registro = "Sudadera Youngla Mujer: " + suymP;
 			MessageBox::Show("Sudadera Youngla Mujer añadida");
 		}
 		else {
@@ -441,7 +502,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (plym > 0) {
 			plym--;
 			countPlym++;
-			registro = "Playera Youngla Mujer: " + countPlym;
+			registro = "Playera Youngla Mujer: " + plymP;
 			MessageBox::Show("Playera Youngla Mujer añadida");
 		}
 		else {
@@ -452,7 +513,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (paym > 0) {
 			paym--;
 			countPaym++;
-			registro = "Pants Youngla Mujer: " + countPaym;
+			registro = "Pants Youngla Mujer: " + paymP;
 			MessageBox::Show("Pants Youngla Mujer añadida");
 		}
 		else {
@@ -463,7 +524,7 @@ private: System::Void ingresar_Click(System::Object^ sender, System::EventArgs^ 
 		if (shym > 0) {
 			shym--;
 			countShym++;
-			registro = "Short Youngla Mujer: " + countShym;
+			registro = "Short Youngla Mujer: " + shymP;
 			MessageBox::Show("Short Youngla Mujer añadida");
 		}
 		else {
@@ -655,5 +716,32 @@ private: System::Void textBoxRegistro_TextChanged(System::Object^ sender, System
 }
 private: System::Void labelRegistro_Click(System::Object^ sender, System::EventArgs^ e) {
 }
+private: System::Void factura_Click(System::Object^ sender, System::EventArgs^ e) {
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	// Calcular el total acumulado
+	int sughPT = sughP * countSugh; // sudadera gym shark hombre
+	int plghPT = plghP * countPlgh; // playera gymshark hombre
+	int paghPT = paghP * countPagh; // pants gymshark hombre
+	int shghPT = shghP * countShgh; // short gymshark hombre
+	int sugmPT = sugmP * countSugm; // sudadera gym shark mujer
+	int plgmPT = plgmP * countPlgm; // playera gymshark mujer
+	int pagmPT = pagmP * countPagm; // pants gymshark mujer
+	int shgmPT = shgmP * countShgm; // short gymshark mujer
+	int suyhPT = suyhP * countSuyh; // sudadera youngla hombre
+	int plyhPT = plyhP * countPlyh; // playera youngla hombre
+	int payhPT = payhP * countPayh; // pants youngla hombre
+	int shyhPT = shyhP * countShyh; // short youngla hombre
+	int suymPT = suymP * countSuym; // sudadera youngla mujer
+	int plymPT = plymP * countPlym; // playera youngla mujer
+	int paymPT = paymP * countPaym; // pants youngla mujer
+	int shymPT = shymP * countShym; // short youngla mujer
+
+	int Total = sughPT + plghPT + paghPT + shghPT + sugmPT + plgmPT + pagmPT + shgmPT + suyhPT + plyhPT + payhPT + shyhPT + suymPT + plymPT + paymPT + shymPT;
+
+	// Mostrar el total en el elemento factura
+	factura->Text += "Total: " + Total + "\n";
+}
+
 };
 }
