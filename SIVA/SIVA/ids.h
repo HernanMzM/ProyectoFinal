@@ -102,6 +102,7 @@ namespace SIVA {
 		/// </summary>
 		void InitializeComponent(void)
 		{
+			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->label1 = (gcnew System::Windows::Forms::Label());
 			this->pictureBox2 = (gcnew System::Windows::Forms::PictureBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
@@ -189,12 +190,14 @@ namespace SIVA {
 			this->pictureBox2->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox2->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox2->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox2->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox2.Image")));
 			this->pictureBox2->Location = System::Drawing::Point(30, 93);
 			this->pictureBox2->Name = L"pictureBox2";
 			this->pictureBox2->Size = System::Drawing::Size(109, 108);
 			this->pictureBox2->SizeMode = System::Windows::Forms::PictureBoxSizeMode::StretchImage;
 			this->pictureBox2->TabIndex = 4;
 			this->pictureBox2->TabStop = false;
+			this->pictureBox2->Click += gcnew System::EventHandler(this, &MyForm::pictureBox2_Click);
 			// 
 			// label2
 			// 
@@ -227,6 +230,7 @@ namespace SIVA {
 			this->pictureBox4->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox4->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox4->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox4->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox4.Image")));
 			this->pictureBox4->Location = System::Drawing::Point(161, 93);
 			this->pictureBox4->Name = L"pictureBox4";
 			this->pictureBox4->Size = System::Drawing::Size(109, 108);
@@ -265,6 +269,7 @@ namespace SIVA {
 			this->pictureBox5->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox5->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox5->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox5->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox5.Image")));
 			this->pictureBox5->Location = System::Drawing::Point(292, 93);
 			this->pictureBox5->Name = L"pictureBox5";
 			this->pictureBox5->Size = System::Drawing::Size(109, 108);
@@ -302,6 +307,7 @@ namespace SIVA {
 			this->pictureBox6->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox6->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox6->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox6->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox6.Image")));
 			this->pictureBox6->Location = System::Drawing::Point(423, 93);
 			this->pictureBox6->Name = L"pictureBox6";
 			this->pictureBox6->Size = System::Drawing::Size(109, 108);
@@ -339,6 +345,7 @@ namespace SIVA {
 			this->pictureBox3->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox3->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox3->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox3.Image")));
 			this->pictureBox3->Location = System::Drawing::Point(422, 288);
 			this->pictureBox3->Name = L"pictureBox3";
 			this->pictureBox3->Size = System::Drawing::Size(109, 108);
@@ -376,6 +383,7 @@ namespace SIVA {
 			this->pictureBox7->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox7->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox7->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox7->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox7.Image")));
 			this->pictureBox7->Location = System::Drawing::Point(291, 288);
 			this->pictureBox7->Name = L"pictureBox7";
 			this->pictureBox7->Size = System::Drawing::Size(109, 108);
@@ -413,6 +421,7 @@ namespace SIVA {
 			this->pictureBox8->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox8->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox8->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox8->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox8.Image")));
 			this->pictureBox8->Location = System::Drawing::Point(160, 288);
 			this->pictureBox8->Name = L"pictureBox8";
 			this->pictureBox8->Size = System::Drawing::Size(109, 108);
@@ -450,6 +459,7 @@ namespace SIVA {
 			this->pictureBox9->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox9->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox9->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox9->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox9.Image")));
 			this->pictureBox9->Location = System::Drawing::Point(29, 288);
 			this->pictureBox9->Name = L"pictureBox9";
 			this->pictureBox9->Size = System::Drawing::Size(109, 108);
@@ -487,6 +497,7 @@ namespace SIVA {
 			this->pictureBox1->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox1->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox1->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox1->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox1.Image")));
 			this->pictureBox1->Location = System::Drawing::Point(973, 288);
 			this->pictureBox1->Name = L"pictureBox1";
 			this->pictureBox1->Size = System::Drawing::Size(109, 108);
@@ -524,6 +535,7 @@ namespace SIVA {
 			this->pictureBox10->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox10->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox10->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox10->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox10.Image")));
 			this->pictureBox10->Location = System::Drawing::Point(842, 288);
 			this->pictureBox10->Name = L"pictureBox10";
 			this->pictureBox10->Size = System::Drawing::Size(109, 108);
@@ -561,6 +573,7 @@ namespace SIVA {
 			this->pictureBox11->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox11->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox11->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox11->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox11.Image")));
 			this->pictureBox11->Location = System::Drawing::Point(711, 288);
 			this->pictureBox11->Name = L"pictureBox11";
 			this->pictureBox11->Size = System::Drawing::Size(109, 108);
@@ -598,6 +611,7 @@ namespace SIVA {
 			this->pictureBox12->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox12->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox12->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox12->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox12.Image")));
 			this->pictureBox12->Location = System::Drawing::Point(580, 288);
 			this->pictureBox12->Name = L"pictureBox12";
 			this->pictureBox12->Size = System::Drawing::Size(109, 108);
@@ -635,6 +649,7 @@ namespace SIVA {
 			this->pictureBox13->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox13->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox13->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox13->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox13.Image")));
 			this->pictureBox13->Location = System::Drawing::Point(974, 93);
 			this->pictureBox13->Name = L"pictureBox13";
 			this->pictureBox13->Size = System::Drawing::Size(109, 108);
@@ -672,6 +687,7 @@ namespace SIVA {
 			this->pictureBox14->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox14->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox14->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox14->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox14.Image")));
 			this->pictureBox14->Location = System::Drawing::Point(843, 93);
 			this->pictureBox14->Name = L"pictureBox14";
 			this->pictureBox14->Size = System::Drawing::Size(109, 108);
@@ -709,6 +725,7 @@ namespace SIVA {
 			this->pictureBox15->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox15->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox15->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox15->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox15.Image")));
 			this->pictureBox15->Location = System::Drawing::Point(712, 93);
 			this->pictureBox15->Name = L"pictureBox15";
 			this->pictureBox15->Size = System::Drawing::Size(109, 108);
@@ -746,6 +763,7 @@ namespace SIVA {
 			this->pictureBox16->BackColor = System::Drawing::SystemColors::ButtonFace;
 			this->pictureBox16->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
 			this->pictureBox16->Cursor = System::Windows::Forms::Cursors::Help;
+			this->pictureBox16->Image = (cli::safe_cast<System::Drawing::Image^>(resources->GetObject(L"pictureBox16.Image")));
 			this->pictureBox16->Location = System::Drawing::Point(581, 93);
 			this->pictureBox16->Name = L"pictureBox16";
 			this->pictureBox16->Size = System::Drawing::Size(109, 108);
@@ -882,5 +900,7 @@ namespace SIVA {
 	}
 	private: System::Void pictureBox4_Click(System::Object^ sender, System::EventArgs^ e) {
 	}
+private: System::Void pictureBox2_Click(System::Object^ sender, System::EventArgs^ e) {
+}
 };
 }
