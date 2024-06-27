@@ -41,6 +41,7 @@ namespace CppCLRWinFormsProject {
     private: System::Windows::Forms::Label^ label2;
     private: System::Windows::Forms::TextBox^ textBox1;
     private: System::Windows::Forms::Button^ bLogin;
+    private: System::Windows::Forms::Button^ button1;
 
     protected:
 
@@ -65,6 +66,7 @@ namespace CppCLRWinFormsProject {
             this->label2 = (gcnew System::Windows::Forms::Label());
             this->textBox1 = (gcnew System::Windows::Forms::TextBox());
             this->bLogin = (gcnew System::Windows::Forms::Button());
+            this->button1 = (gcnew System::Windows::Forms::Button());
             this->SuspendLayout();
             // 
             // labelsiva
@@ -129,6 +131,7 @@ namespace CppCLRWinFormsProject {
             // 
             // bLogin
             // 
+            this->bLogin->BackColor = System::Drawing::SystemColors::ControlLightLight;
             this->bLogin->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
                 static_cast<System::Byte>(0)));
             this->bLogin->Location = System::Drawing::Point(347, 353);
@@ -136,8 +139,21 @@ namespace CppCLRWinFormsProject {
             this->bLogin->Size = System::Drawing::Size(243, 52);
             this->bLogin->TabIndex = 5;
             this->bLogin->Text = L"CONTINUAR";
-            this->bLogin->UseVisualStyleBackColor = true;
+            this->bLogin->UseVisualStyleBackColor = false;
             this->bLogin->Click += gcnew System::EventHandler(this, &Form1::bLogin_Click);
+            // 
+            // button1
+            // 
+            this->button1->BackColor = System::Drawing::SystemColors::ControlLightLight;
+            this->button1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 15.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->button1->Location = System::Drawing::Point(685, 397);
+            this->button1->Name = L"button1";
+            this->button1->Size = System::Drawing::Size(187, 52);
+            this->button1->TabIndex = 6;
+            this->button1->Text = L"SALIR";
+            this->button1->UseVisualStyleBackColor = false;
+            this->button1->Click += gcnew System::EventHandler(this, &Form1::button1_Click);
             // 
             // Form1
             // 
@@ -145,6 +161,7 @@ namespace CppCLRWinFormsProject {
             this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
             this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
             this->ClientSize = System::Drawing::Size(884, 461);
+            this->Controls->Add(this->button1);
             this->Controls->Add(this->bLogin);
             this->Controls->Add(this->textBox1);
             this->Controls->Add(this->label2);
@@ -173,7 +190,6 @@ namespace CppCLRWinFormsProject {
         if (username == "jpshop") {
             if (password == "skylex123") {
                 MessageBox::Show("Bienvenido JP SHOP");
-                this->Hide();
                 SIVA::Form2^ form2 = gcnew SIVA::Form2();
                 form2->Show();
             }
@@ -186,6 +202,9 @@ namespace CppCLRWinFormsProject {
         }
     }
     private: System::Void user_TextChanged(System::Object^ sender, System::EventArgs^ e) {
+    }
+    private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+        this->Close();
     }
 };
 }

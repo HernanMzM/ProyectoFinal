@@ -48,6 +48,9 @@ namespace SIVA {
 	private: System::Windows::Forms::Button^ button2;
 	private: System::Windows::Forms::Label^ factura;
 	private: System::Windows::Forms::Panel^ panel3;
+	private: System::Windows::Forms::Button^ salir;
+
+
 
 
 
@@ -90,6 +93,7 @@ namespace SIVA {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->factura = (gcnew System::Windows::Forms::Label());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
+			this->salir = (gcnew System::Windows::Forms::Button());
 			this->panel1->SuspendLayout();
 			this->panel2->SuspendLayout();
 			this->panel3->SuspendLayout();
@@ -233,7 +237,7 @@ namespace SIVA {
 			// button2
 			// 
 			this->button2->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->button2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 11.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+			this->button2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 21.75F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button2->ForeColor = System::Drawing::SystemColors::ControlLightLight;
 			this->button2->Location = System::Drawing::Point(-2, 240);
@@ -257,12 +261,27 @@ namespace SIVA {
 			// panel3
 			// 
 			this->panel3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel3->Controls->Add(this->salir);
 			this->panel3->Controls->Add(this->factura);
 			this->panel3->Controls->Add(this->button2);
 			this->panel3->Location = System::Drawing::Point(569, 98);
 			this->panel3->Name = L"panel3";
-			this->panel3->Size = System::Drawing::Size(303, 309);
+			this->panel3->Size = System::Drawing::Size(303, 354);
 			this->panel3->TabIndex = 3;
+			// 
+			// salir
+			// 
+			this->salir->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->salir->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->salir->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->salir->Location = System::Drawing::Point(-2, 311);
+			this->salir->Name = L"salir";
+			this->salir->Size = System::Drawing::Size(303, 36);
+			this->salir->TabIndex = 8;
+			this->salir->Text = L"SALIR";
+			this->salir->UseVisualStyleBackColor = false;
+			this->salir->Click += gcnew System::EventHandler(this, &Form2::salir_Click);
 			// 
 			// Form2
 			// 
@@ -743,5 +762,8 @@ private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e
 	factura->Text += "Total: " + Total + "\n";
 }
 
+private: System::Void salir_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->Hide();
+}
 };
 }
