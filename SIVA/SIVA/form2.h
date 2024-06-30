@@ -589,6 +589,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 111: // sudadera gym shark hombre
 		if (sugh < 20) {
 			sugh++;
+			countSugh--;
 			MessageBox::Show("Sudadera GymShark Hombre devuelta");
 		}
 		else {
@@ -598,6 +599,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 211: // playera gymshark hombre
 		if (plgh < 20) {
 			plgh++;
+			countPlgh--;
 			MessageBox::Show("Playera GymShark Hombre devuelta");
 		}
 		else {
@@ -607,6 +609,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 311: // pants gymshark hombre
 		if (pagh < 20) {
 			pagh++;
+			countPagh--;
 			MessageBox::Show("Pants GymShark Hombre devuelta");
 		}
 		else {
@@ -616,6 +619,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 411: // short gymshark hombre
 		if (shgh < 20) {
 			shgh++;
+			countShgh--;
 			MessageBox::Show("Short GymShark Hombre devuelta");
 		}
 		else {
@@ -625,6 +629,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 112: // sudadera gym shark mujer
 		if (sugm < 20) {
 			sugm++;
+			countSugm--;
 			MessageBox::Show("Sudadera GymShark Mujer devuelta");
 		}
 		else {
@@ -634,6 +639,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 212: // playera gymshark mujer
 		if (plgm < 20) {
 			plgm++;
+			countPlgm--;
 			MessageBox::Show("Playera GymShark Mujer devuelta");
 		}
 		else {
@@ -643,6 +649,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 312: // pants gymshark mujer
 		if (pagm < 20) {
 			pagm++;
+			countPagm--;
 			MessageBox::Show("Pants GymShark Mujer añadida");
 		}
 		else {
@@ -652,6 +659,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 412: // short gymshark mujer
 		if (shgm < 20) {
 			shgm++;
+			countShgm--;
 			MessageBox::Show("Short GymShark Mujer añadida");
 		}
 		else {
@@ -661,6 +669,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 121: // sudadera youngla hombre
 		if (suyh < 10) {
 			suyh++;
+			countSuyh--;
 			MessageBox::Show("Sudadera Youngla Hombre añadida");
 		}
 		else {
@@ -670,6 +679,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 221: // playera youngla hombre
 		if (plyh < 10) {
 			plyh++;
+			countPlyh--;
 			MessageBox::Show("Playera Youngla Hombre añadida");
 		}
 		else {
@@ -679,6 +689,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 321: // pants youngla hombre
 		if (payh < 10) {
 			payh++;
+			countPayh--;
 			MessageBox::Show("Pants Youngla Hombre añadida");
 		}
 		else {
@@ -688,6 +699,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 421: // short youngla hombre
 		if (shyh < 10) {
 			shyh++;
+			countShyh--;
 			MessageBox::Show("Short Youngla Hombre añadida");
 		}
 		else {
@@ -697,6 +709,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 122: // sudadera youngla mujer
 		if (suym < 10) {
 			suym++;
+			countSuym--;
 			MessageBox::Show("Sudadera Youngla Mujer añadida");
 		}
 		else {
@@ -706,6 +719,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 222: // playera youngla mujer
 		if (plym < 10) {
 			plym++;
+			countPlym--;
 			MessageBox::Show("Playera Youngla Mujer añadida");
 		}
 		else {
@@ -715,6 +729,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 322: // pants youngla mujer
 		if (paym < 10) {
 			paym++;
+			countPaym--;
 			MessageBox::Show("Pants Youngla Mujer añadida");
 		}
 		else {
@@ -724,6 +739,7 @@ private: System::Void devolver_Click(System::Object^ sender, System::EventArgs^ 
 	case 422: // short youngla mujer
 		if (shym < 10) {
 			shym++;
+			countShym--;
 			MessageBox::Show("Short Youngla Mujer añadida");
 		}
 		else {
