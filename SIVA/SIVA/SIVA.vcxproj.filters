@@ -41,6 +41,21 @@
     <ClInclude Include="MyForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="crud.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ada.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="edit.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="see.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="delate.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="CppCLR_WinFormsProject.cpp">
@@ -65,6 +80,21 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="MyForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="crud.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ada.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="edit.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="see.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="delate.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

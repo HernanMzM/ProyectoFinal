@@ -19,6 +19,7 @@ namespace CppCLRWinFormsProject {
         Form1(void)
         {
             InitializeComponent();
+            tries = 3;
             //
             //TODO: Add the constructor code here
             //
@@ -184,22 +185,25 @@ namespace CppCLRWinFormsProject {
     }
     private: System::Void label2_Click(System::Object^ sender, System::EventArgs^ e) {
     }
+    private:
+        int tries;
     private: System::Void bLogin_Click(System::Object^ sender, System::EventArgs^ e) {
         String^ username = user->Text;
         String^ password = textBox1->Text;
-        if (username == "jpshop") {
-            if (password == "skylex123") {
-                MessageBox::Show("Bienvenido JP SHOP");
-                SIVA::Form2^ form2 = gcnew SIVA::Form2();
-                form2->Show();
-            }
-            else {
-                MessageBox::Show("Datos incorrectos");
-            }
+        if (username == "jpshop" && password == "skylex123") {
+            MessageBox::Show("Bienvenido");
+            SIVA::Form2^ form2 = gcnew SIVA::Form2();
+            form2->Show();
         }
         else {
-            MessageBox::Show("Datos incorrectos");
+            MessageBox::Show("Datos Incorrectos.\n" + tries + " Intentos Restantes");
+            tries--;
+            if (tries == 0) {
+                MessageBox::Show("Intentos Superados");
+                this->Close();
+            }
         }
+
     }
     private: System::Void user_TextChanged(System::Object^ sender, System::EventArgs^ e) {
     }

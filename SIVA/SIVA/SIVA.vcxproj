@@ -130,6 +130,18 @@
     <ResourceCompile Include="app.rc" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ada.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="crud.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="delate.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="edit.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
     <ClInclude Include="Form1.h">
       <FileType>CppForm</FileType>
     </ClInclude>
@@ -147,10 +159,17 @@
     </ClInclude>
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="see.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="ada.cpp" />
     <ClCompile Include="AssemblyInfo.cpp" />
     <ClCompile Include="CppCLR_WinFormsProject.cpp" />
+    <ClCompile Include="crud.cpp" />
+    <ClCompile Include="delate.cpp" />
+    <ClCompile Include="edit.cpp" />
     <ClCompile Include="Form1.cpp" />
     <ClCompile Include="Form2.cpp" />
     <ClCompile Include="Form3.cpp" />
@@ -162,6 +181,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="see.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="app.ico" />
@@ -174,6 +194,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="ada.resx">
+      <DependentUpon>ada.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="crud.resx">
+      <DependentUpon>crud.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="delate.resx">
+      <DependentUpon>delate.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit.resx">
+      <DependentUpon>edit.h</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.h</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MyForm.resx">
       <DependentUpon>MyForm.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="see.resx">
+      <DependentUpon>see.h</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

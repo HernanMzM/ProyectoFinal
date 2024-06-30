@@ -1,6 +1,7 @@
 #pragma once
 #include <vector>
 #include "MyForm.h"
+#include "crud.h"
 namespace SIVA {
 	using namespace System;
 	using namespace System::ComponentModel;
@@ -51,6 +52,7 @@ namespace SIVA {
 	private: System::Windows::Forms::Panel^ panel3;
 	private: System::Windows::Forms::Button^ salir;
 	private: System::Windows::Forms::Button^ limpiar;
+	private: System::Windows::Forms::Button^ productos;
 
 
 
@@ -95,8 +97,9 @@ namespace SIVA {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->factura = (gcnew System::Windows::Forms::Label());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
-			this->salir = (gcnew System::Windows::Forms::Button());
 			this->limpiar = (gcnew System::Windows::Forms::Button());
+			this->salir = (gcnew System::Windows::Forms::Button());
+			this->productos = (gcnew System::Windows::Forms::Button());
 			this->panel1->SuspendLayout();
 			this->panel2->SuspendLayout();
 			this->panel3->SuspendLayout();
@@ -229,7 +232,7 @@ namespace SIVA {
 			this->button1->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->button1->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->button1->Location = System::Drawing::Point(22, 375);
+			this->button1->Location = System::Drawing::Point(22, 344);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(105, 32);
 			this->button1->TabIndex = 5;
@@ -273,20 +276,6 @@ namespace SIVA {
 			this->panel3->Size = System::Drawing::Size(303, 354);
 			this->panel3->TabIndex = 3;
 			// 
-			// salir
-			// 
-			this->salir->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
-			this->salir->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
-				static_cast<System::Byte>(0)));
-			this->salir->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->salir->Location = System::Drawing::Point(149, 311);
-			this->salir->Name = L"salir";
-			this->salir->Size = System::Drawing::Size(152, 36);
-			this->salir->TabIndex = 8;
-			this->salir->Text = L"SALIR";
-			this->salir->UseVisualStyleBackColor = false;
-			this->salir->Click += gcnew System::EventHandler(this, &Form2::salir_Click);
-			// 
 			// limpiar
 			// 
 			this->limpiar->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
@@ -301,12 +290,41 @@ namespace SIVA {
 			this->limpiar->UseVisualStyleBackColor = false;
 			this->limpiar->Click += gcnew System::EventHandler(this, &Form2::limpiar_Click);
 			// 
+			// salir
+			// 
+			this->salir->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->salir->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->salir->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->salir->Location = System::Drawing::Point(149, 311);
+			this->salir->Name = L"salir";
+			this->salir->Size = System::Drawing::Size(152, 36);
+			this->salir->TabIndex = 8;
+			this->salir->Text = L"SALIR";
+			this->salir->UseVisualStyleBackColor = false;
+			this->salir->Click += gcnew System::EventHandler(this, &Form2::salir_Click);
+			// 
+			// productos
+			// 
+			this->productos->BackColor = System::Drawing::SystemColors::MenuText;
+			this->productos->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->productos->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->productos->Location = System::Drawing::Point(22, 382);
+			this->productos->Name = L"productos";
+			this->productos->Size = System::Drawing::Size(105, 32);
+			this->productos->TabIndex = 8;
+			this->productos->Text = L"Más";
+			this->productos->UseVisualStyleBackColor = false;
+			this->productos->Click += gcnew System::EventHandler(this, &Form2::productos_Click);
+			// 
 			// Form2
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
 			this->ClientSize = System::Drawing::Size(884, 461);
+			this->Controls->Add(this->productos);
 			this->Controls->Add(this->panel3);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->panel2);
@@ -843,5 +861,11 @@ private:
 			factura->Text += "Total del día: " + dia;
 
 		}
-	};
+	private: System::Void productos_Click(System::Object^ sender, System::EventArgs^ e) {
+		SIVA::crud^ crud = gcnew SIVA::crud();
+		crud->Show();
+
+
+	}
+};
 }
