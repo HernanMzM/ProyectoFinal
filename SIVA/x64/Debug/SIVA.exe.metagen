@@ -24,6 +24,27 @@ Class SIVA.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
 Class SIVA.Form2: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 sughPT : Public
+    Int32 plghPT : Public
+    Int32 paghPT : Public
+    Int32 shghPT : Public
+    Int32 sugmPT : Public
+    Int32 plgmPT : Public
+    Int32 pagmPT : Public
+    Int32 shgmPT : Public
+    Int32 suyhPT : Public
+    Int32 plyhPT : Public
+    Int32 payhPT : Public
+    Int32 shyhPT : Public
+    Int32 suymPT : Public
+    Int32 plymPT : Public
+    Int32 paymPT : Public
+    Int32 shymPT : Public
+    Int32 Total : Public
+  Methods:
+    button2_Click(Object, EventArgs): PrivateScope, Public, HideBySig
+    limpiar_Click(Object, EventArgs): PrivateScope, Public, HideBySig
 Class CppCLRWinFormsProject.Form1: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName

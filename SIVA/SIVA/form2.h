@@ -1,4 +1,5 @@
 #pragma once
+#include <vector>
 #include "MyForm.h"
 namespace SIVA {
 	using namespace System;
@@ -7,6 +8,7 @@ namespace SIVA {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace std;
 
 	/// <summary>
 	/// Resumen de Form2
@@ -49,6 +51,7 @@ namespace SIVA {
 	private: System::Windows::Forms::Label^ factura;
 	private: System::Windows::Forms::Panel^ panel3;
 	private: System::Windows::Forms::Button^ salir;
+	private: System::Windows::Forms::Button^ limpiar;
 
 
 
@@ -94,6 +97,7 @@ namespace SIVA {
 			this->factura = (gcnew System::Windows::Forms::Label());
 			this->panel3 = (gcnew System::Windows::Forms::Panel());
 			this->salir = (gcnew System::Windows::Forms::Button());
+			this->limpiar = (gcnew System::Windows::Forms::Button());
 			this->panel1->SuspendLayout();
 			this->panel2->SuspendLayout();
 			this->panel3->SuspendLayout();
@@ -261,6 +265,7 @@ namespace SIVA {
 			// panel3
 			// 
 			this->panel3->BorderStyle = System::Windows::Forms::BorderStyle::Fixed3D;
+			this->panel3->Controls->Add(this->limpiar);
 			this->panel3->Controls->Add(this->salir);
 			this->panel3->Controls->Add(this->factura);
 			this->panel3->Controls->Add(this->button2);
@@ -275,13 +280,27 @@ namespace SIVA {
 			this->salir->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
 			this->salir->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->salir->Location = System::Drawing::Point(-2, 311);
+			this->salir->Location = System::Drawing::Point(149, 311);
 			this->salir->Name = L"salir";
-			this->salir->Size = System::Drawing::Size(303, 36);
+			this->salir->Size = System::Drawing::Size(152, 36);
 			this->salir->TabIndex = 8;
 			this->salir->Text = L"SALIR";
 			this->salir->UseVisualStyleBackColor = false;
 			this->salir->Click += gcnew System::EventHandler(this, &Form2::salir_Click);
+			// 
+			// limpiar
+			// 
+			this->limpiar->BackColor = System::Drawing::SystemColors::ActiveCaptionText;
+			this->limpiar->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 14.25F, System::Drawing::FontStyle::Bold, System::Drawing::GraphicsUnit::Point,
+				static_cast<System::Byte>(0)));
+			this->limpiar->ForeColor = System::Drawing::SystemColors::ControlLightLight;
+			this->limpiar->Location = System::Drawing::Point(-2, 311);
+			this->limpiar->Name = L"limpiar";
+			this->limpiar->Size = System::Drawing::Size(145, 36);
+			this->limpiar->TabIndex = 9;
+			this->limpiar->Text = L"NUEVO";
+			this->limpiar->UseVisualStyleBackColor = false;
+			this->limpiar->Click += gcnew System::EventHandler(this, &Form2::limpiar_Click);
 			// 
 			// Form2
 			// 
@@ -737,31 +756,59 @@ private: System::Void labelRegistro_Click(System::Object^ sender, System::EventA
 }
 private: System::Void factura_Click(System::Object^ sender, System::EventArgs^ e) {
 }
-private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	// Calcular el total acumulado
-	int sughPT = sughP * countSugh; // sudadera gym shark hombre
-	int plghPT = plghP * countPlgh; // playera gymshark hombre
-	int paghPT = paghP * countPagh; // pants gymshark hombre
-	int shghPT = shghP * countShgh; // short gymshark hombre
-	int sugmPT = sugmP * countSugm; // sudadera gym shark mujer
-	int plgmPT = plgmP * countPlgm; // playera gymshark mujer
-	int pagmPT = pagmP * countPagm; // pants gymshark mujer
-	int shgmPT = shgmP * countShgm; // short gymshark mujer
-	int suyhPT = suyhP * countSuyh; // sudadera youngla hombre
-	int plyhPT = plyhP * countPlyh; // playera youngla hombre
-	int payhPT = payhP * countPayh; // pants youngla hombre
-	int shyhPT = shyhP * countShyh; // short youngla hombre
-	int suymPT = suymP * countSuym; // sudadera youngla mujer
-	int plymPT = plymP * countPlym; // playera youngla mujer
-	int paymPT = paymP * countPaym; // pants youngla mujer
-	int shymPT = shymP * countShym; // short youngla mujer
 
-	int Total = sughPT + plghPT + paghPT + shghPT + sugmPT + plgmPT + pagmPT + shgmPT + suyhPT + plyhPT + payhPT + shyhPT + suymPT + plymPT + paymPT + shymPT;
+public:
+	int sughPT, plghPT, paghPT, shghPT, sugmPT, plgmPT, pagmPT, shgmPT;
+	int suyhPT, plyhPT, payhPT, shyhPT, suymPT, plymPT, paymPT, shymPT;
+	int Total = 0;
 
-	// Mostrar el total en el elemento factura
+private:
+	void calcularTotal() {
+		sughPT = sughP * countSugh;
+		plghPT = plghP * countPlgh;
+		paghPT = paghP * countPagh;
+		shghPT = shghP * countShgh;
+		sugmPT = sugmP * countSugm;
+		plgmPT = plgmP * countPlgm;
+		pagmPT = pagmP * countPagm;
+		shgmPT = shgmP * countShgm;
+		suyhPT = suyhP * countSuyh;
+		plyhPT = plyhP * countPlyh;
+		payhPT = payhP * countPayh;
+		shyhPT = shyhP * countShyh;
+		suymPT = suymP * countSuym;
+		plymPT = plymP * countPlym;
+		paymPT = paymP * countPaym;
+		shymPT = shymP * countShym;
+
+		Total = sughPT + plghPT + paghPT + shghPT + sugmPT + plgmPT + pagmPT + shgmPT + suyhPT + plyhPT + payhPT + shyhPT + suymPT + plymPT + paymPT + shymPT;
+	}
+
+public: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	calcularTotal();
 	factura->Text += "Total: " + Total + "\n";
 }
 
+public: System::Void limpiar_Click(System::Object^ sender, System::EventArgs^ e) {
+	factura->Text = "";
+	countSugh = 0;
+	countPlgh = 0;
+	countPagh = 0;
+	countShgh = 0;
+	countSugm = 0;
+	countPlgm = 0;
+	countPagm = 0;
+	countShgm = 0;
+	countSuyh = 0;
+	countPlyh = 0;
+	countPayh = 0;
+	countShyh = 0;
+	countSuym = 0;
+	countPlym = 0;
+	countPaym = 0;
+	countShym = 0;
+	labelRegistro->Text = "";
+}
 private: System::Void salir_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->Hide();
 }
