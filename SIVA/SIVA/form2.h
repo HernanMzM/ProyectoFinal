@@ -833,10 +833,15 @@ private:
 
 		System::Void salir_Click(System::Object^ sender, System::EventArgs^ e) {
 			calcularTotal();
+			factura->Text = "";
+			int dia = 0;
 			for (int i = 0; i < acum->Count; ++i) {
 				int j = i + 1;
 				factura->Text += "Venta " + j + ": " + acum[i] + "\n";
+				dia += acum[i];
 			}
+			factura->Text += "Total del día: " + dia;
+
 		}
 	};
 }
