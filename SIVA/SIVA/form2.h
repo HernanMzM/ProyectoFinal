@@ -19,9 +19,8 @@ namespace SIVA {
 		Form2(void)
 		{
 			InitializeComponent();
-			//
-			//TODO: agregar código de constructor aquí
-			//
+			acum = gcnew System::Collections::Generic::List<int>();
+
 		}
 
 	protected:
@@ -757,60 +756,71 @@ private: System::Void labelRegistro_Click(System::Object^ sender, System::EventA
 private: System::Void factura_Click(System::Object^ sender, System::EventArgs^ e) {
 }
 
-public:
+private:
 	int sughPT, plghPT, paghPT, shghPT, sugmPT, plgmPT, pagmPT, shgmPT;
 	int suyhPT, plyhPT, payhPT, shyhPT, suymPT, plymPT, paymPT, shymPT;
 	int Total = 0;
 
-private:
-	void calcularTotal() {
-		sughPT = sughP * countSugh;
-		plghPT = plghP * countPlgh;
-		paghPT = paghP * countPagh;
-		shghPT = shghP * countShgh;
-		sugmPT = sugmP * countSugm;
-		plgmPT = plgmP * countPlgm;
-		pagmPT = pagmP * countPagm;
-		shgmPT = shgmP * countShgm;
-		suyhPT = suyhP * countSuyh;
-		plyhPT = plyhP * countPlyh;
-		payhPT = payhP * countPayh;
-		shyhPT = shyhP * countShyh;
-		suymPT = suymP * countSuym;
-		plymPT = plymP * countPlym;
-		paymPT = paymP * countPaym;
-		shymPT = shymP * countShym;
 
-		Total = sughPT + plghPT + paghPT + shghPT + sugmPT + plgmPT + pagmPT + shgmPT + suyhPT + plyhPT + payhPT + shyhPT + suymPT + plymPT + paymPT + shymPT;
-	}
+	private:
+		System::Collections::Generic::List<int>^ acum;
 
-public: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
-	calcularTotal();
-	factura->Text += "Total: " + Total + "\n";
-}
+		void calcularTotal() {
+			sughPT = sughP * countSugh;
+			plghPT = plghP * countPlgh;
+			paghPT = paghP * countPagh;
+			shghPT = shghP * countShgh;
+			sugmPT = sugmP * countSugm;
+			plgmPT = plgmP * countPlgm;
+			pagmPT = pagmP * countPagm;
+			shgmPT = shgmP * countShgm;
+			suyhPT = suyhP * countSuyh;
+			plyhPT = plyhP * countPlyh;
+			payhPT = payhP * countPayh;
+			shyhPT = shyhP * countShyh;
+			suymPT = suymP * countSuym;
+			plymPT = plymP * countPlym;
+			paymPT = paymP * countPaym;
+			shymPT = shymP * countShym;
 
-public: System::Void limpiar_Click(System::Object^ sender, System::EventArgs^ e) {
-	factura->Text = "";
-	countSugh = 0;
-	countPlgh = 0;
-	countPagh = 0;
-	countShgh = 0;
-	countSugm = 0;
-	countPlgm = 0;
-	countPagm = 0;
-	countShgm = 0;
-	countSuyh = 0;
-	countPlyh = 0;
-	countPayh = 0;
-	countShyh = 0;
-	countSuym = 0;
-	countPlym = 0;
-	countPaym = 0;
-	countShym = 0;
-	labelRegistro->Text = "";
-}
-private: System::Void salir_Click(System::Object^ sender, System::EventArgs^ e) {
-	this->Hide();
-}
-};
+			Total = sughPT + plghPT + paghPT + shghPT + sugmPT + plgmPT + pagmPT + shgmPT + suyhPT + plyhPT + payhPT + shyhPT + suymPT + plymPT + paymPT + shymPT;
+			int suma = Total;
+			acum->Add(suma);
+		}
+
+	public:
+		System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+			calcularTotal();
+			factura->Text += "Total: " + Total + "\n";
+		}
+
+		System::Void limpiar_Click(System::Object^ sender, System::EventArgs^ e) {
+			factura->Text = "";
+			countSugh = 0;
+			countPlgh = 0;
+			countPagh = 0;
+			countShgh = 0;
+			countSugm = 0;
+			countPlgm = 0;
+			countPagm = 0;
+			countShgm = 0;
+			countSuyh = 0;
+			countPlyh = 0;
+			countPayh = 0;
+			countShyh = 0;
+			countSuym = 0;
+			countPlym = 0;
+			countPaym = 0;
+			countShym = 0;
+			labelRegistro->Text = "";
+		}
+
+		System::Void salir_Click(System::Object^ sender, System::EventArgs^ e) {
+			calcularTotal();
+			for (int i = 0; i < acum->Count; ++i) {
+				int j = i + 1;
+				factura->Text += "Venta " + j + ": " + acum[i] + "\n";
+			}
+		}
+	};
 }
