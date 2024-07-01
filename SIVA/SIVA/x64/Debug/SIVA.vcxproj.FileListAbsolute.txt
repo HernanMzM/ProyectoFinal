@@ -15,3 +15,10 @@ C:\Users\jurbi\Desktop\SIVA\SIVA\SIVA\x64\Debug\SIVA.ada.resources
 C:\Users\jurbi\Desktop\SIVA\SIVA\SIVA\x64\Debug\SIVA.delate.resources
 C:\Users\jurbi\Desktop\SIVA\SIVA\SIVA\x64\Debug\SIVA.edit.resources
 C:\Users\jurbi\Desktop\SIVA\SIVA\SIVA\x64\Debug\SIVA.see.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\SIVA\SIVA\x64\Debug\SIVA.ada.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\SIVA\SIVA\x64\Debug\SIVA.crud.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\SIVA\SIVA\x64\Debug\SIVA.delate.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\SIVA\SIVA\x64\Debug\SIVA.edit.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\SIVA\SIVA\x64\Debug\SIVA.ids.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\SIVA\SIVA\x64\Debug\SIVA.MyForm.resources
+C:\Users\Usuario\OneDrive\Escritorio\ProyectoFinal\SIVA\SIVA\x64\Debug\SIVA.see.resources

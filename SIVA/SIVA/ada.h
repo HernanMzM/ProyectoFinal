@@ -90,7 +90,7 @@ namespace SIVA {
 			this->label3->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 15.75F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->label3->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->label3->Location = System::Drawing::Point(12, 79);
+			this->label3->Location = System::Drawing::Point(12, 83);
 			this->label3->Name = L"label3";
 			this->label3->Size = System::Drawing::Size(100, 30);
 			this->label3->TabIndex = 2;
@@ -102,7 +102,7 @@ namespace SIVA {
 			this->label2->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 15.75F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->label2->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->label2->Location = System::Drawing::Point(12, 152);
+			this->label2->Location = System::Drawing::Point(65, 152);
 			this->label2->Name = L"label2";
 			this->label2->Size = System::Drawing::Size(47, 30);
 			this->label2->TabIndex = 3;
@@ -114,7 +114,7 @@ namespace SIVA {
 			this->label4->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 15.75F, static_cast<System::Drawing::FontStyle>((System::Drawing::FontStyle::Bold | System::Drawing::FontStyle::Italic)),
 				System::Drawing::GraphicsUnit::Point, static_cast<System::Byte>(0)));
 			this->label4->ForeColor = System::Drawing::SystemColors::ControlLightLight;
-			this->label4->Location = System::Drawing::Point(12, 114);
+			this->label4->Location = System::Drawing::Point(26, 118);
 			this->label4->Name = L"label4";
 			this->label4->Size = System::Drawing::Size(86, 30);
 			this->label4->TabIndex = 4;
@@ -124,7 +124,7 @@ namespace SIVA {
 			// 
 			this->nameP->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->nameP->Location = System::Drawing::Point(118, 80);
+			this->nameP->Location = System::Drawing::Point(118, 83);
 			this->nameP->Name = L"nameP";
 			this->nameP->Size = System::Drawing::Size(100, 29);
 			this->nameP->TabIndex = 5;
@@ -134,7 +134,7 @@ namespace SIVA {
 			// 
 			this->idP->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->idP->Location = System::Drawing::Point(65, 153);
+			this->idP->Location = System::Drawing::Point(118, 153);
 			this->idP->Name = L"idP";
 			this->idP->Size = System::Drawing::Size(100, 29);
 			this->idP->TabIndex = 7;
@@ -157,7 +157,7 @@ namespace SIVA {
 			// 
 			this->precioP->Font = (gcnew System::Drawing::Font(L"Nirmala UI", 12, System::Drawing::FontStyle::Italic, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(0)));
-			this->precioP->Location = System::Drawing::Point(104, 118);
+			this->precioP->Location = System::Drawing::Point(118, 118);
 			this->precioP->Name = L"precioP";
 			this->precioP->Size = System::Drawing::Size(100, 29);
 			this->precioP->TabIndex = 6;
