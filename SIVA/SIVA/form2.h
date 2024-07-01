@@ -236,7 +236,7 @@ namespace SIVA {
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(105, 32);
 			this->button1->TabIndex = 5;
-			this->button1->Text = L"Guía ID";
+			this->button1->Text = L"Catálogo ";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &Form2::button1_Click);
 			// 
